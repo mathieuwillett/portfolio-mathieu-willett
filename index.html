@@ -21,64 +21,84 @@
             <h2>mathieu willett</h2>
         </div>
     </header>
+    <!-- Marie-Michelle: J'ai enlevé la classe container-fluid sur le main -->
+    <main>
+        <!-- Marie-Michelle: J'ai ajouté un div.container-fluid qui encadre le héros et la barre des technologies et logiciel afin qu'ils puissent s'afficher sur toute la largeur de la fenêtre -->
+        <div class="container-fluid">
 
-    <main class="container-fluid">
 
-        <div class="row">
-            <div class="col-12 mb-5 imageCarrousel">
+            <div class="row">
+                <div class="col-12 mb-5 imageCarrousel">
 
-                <a href=""><img id="flecheG" src="./img/fleche.png"></a>
+                    <a href=""><img id="flecheG" src="./img/fleche.png"></a>
 
-                <a href=""><img id="flecheD" src="./img/fleche.png"></a>
+                    <a href=""><img id="flecheD" src="./img/fleche.png"></a>
+                </div>
             </div>
+
+            <a class="offset-1 col-3 titre" href="">
+                <div>
+                    <h2>titre du projet</h2>
+                </div>
+            </a>
+
+            <div class="row">
+                <div class="apps">
+                    <img class="logiciel" src="./img/logiciels/html.png">
+                    <img class="logiciel" src="./img/logiciels/css.png">
+                    <img class="logiciel" src="./img/logiciels/js.png">
+                    <img class="logiciel" src="./img/logiciels/csharp.png">
+                    <img class="logiciel" src="./img/logiciels/c++.png">
+                    <img class="logiciel" src="./img/logiciels/github.png">
+                    <img class="logiciel davinci" src="./img/logiciels/davinci.png">
+                    <img class="logiciel" src="./img/logiciels/vscode.png">
+                    <img class="logiciel" src="./img/logiciels/figma.png">
+                    <img class="logiciel" src="./img/logiciels/reaper.png">
+                    <img class="logiciel" src="./img/logiciels/maya.png">
+                    <img class="logiciel" src="./img/logiciels/unity.png">
+                    <img class="logiciel" src="./img/logiciels/touch.png">
+                    <img class="logiciel" src="./img/logiciels/pd.png">
+                    <img class="logiciel" src="./img/logiciels/platformio.png">
+                    <img class="logiciel" src="./img/logiciels/vs.png">
+                </div>
+            </div>
+
         </div>
 
-        <a class="offset-1 col-3 titre" href="">
-            <div>
-                <h2>titre du projet</h2>
+        <!-- Marie-Michelle: J'ai ajouté un div.container autour du rexte de la page... -->
+        <div class="container">
+
+
+            <div class="row projets">
+                <h3>projets</h3>
+                <!-- Marie-Michelle: J'ai changé les classes ici pour col-6 et enlevé les classes offset (je l'ai fait juste pour les 2 premiers pour tester...) -->
+                <div class="projet terminus col-6"></div>
+                <div class="projet chasseur col-6"></div>
+
+
+                <!-- Commentaire de Marie-Michelle pour Mathieu: Les projets devraient contenir une balise img et non pas être en image d'arrière plan. Sinon ton site ne pourra pas être dynamique et le contenu va dépendre de sa feuille de styles. Les images d'arrière plan sont réservé au styles général du site pas pour son contenu. Il faut donc ajouter les images de contenu dans le HTML donc dans une balise <img>.
+                 
+                
+                Quand tu auras mis l'image dans le contenu, tu pourras enlevé les styles que tu as mis sur .projet (qui force une largeur et hauteur et une marge en bas) et ta grille de mise en page bootstrap va se placer...
+                
+                Il faut juste que tu t'assure que l'image soit flexible, je pense que tu peu xajouter la classe utilitaire de Bootstrap img-fluid https://getbootstrap.com/docs/5.2/content/images/ -->
+                <div class="projet fou offset-1 col-4"></div>
+                <div class="projet troisd offset-2 col-4"></div>
+                <div class="projet paysage offset-4 col-4"></div>
             </div>
-        </a>
 
-        <div class="row">
-            <div class="apps">
-                <img class="logiciel" src="./img/logiciels/html.png">
-                <img class="logiciel" src="./img/logiciels/css.png">
-                <img class="logiciel" src="./img/logiciels/js.png">
-                <img class="logiciel" src="./img/logiciels/csharp.png">
-                <img class="logiciel" src="./img/logiciels/c++.png">
-                <img class="logiciel" src="./img/logiciels/github.png">
-                <img class="logiciel davinci" src="./img/logiciels/davinci.png">
-                <img class="logiciel" src="./img/logiciels/vscode.png">
-                <img class="logiciel" src="./img/logiciels/figma.png">
-                <img class="logiciel" src="./img/logiciels/reaper.png">
-                <img class="logiciel" src="./img/logiciels/maya.png">
-                <img class="logiciel" src="./img/logiciels/unity.png">
-                <img class="logiciel" src="./img/logiciels/touch.png">
-                <img class="logiciel" src="./img/logiciels/pd.png">
-                <img class="logiciel" src="./img/logiciels/platformio.png">
-                <img class="logiciel" src="./img/logiciels/vs.png">
-            </div>
-        </div>
-
-        <div class="row projets">
-            <h3>projets</h3>
-            <div class="projet terminus col-4 offset-1"></div>
-            <div class="projet chasseur offset-2 col-4"></div>
-            <div class="projet fou offset-1 col-4"></div>
-            <div class="projet troisd offset-2 col-4"></div>
-            <div class="projet paysage offset-4 col-4"></div>
-        </div>
-
-        <!-- <a href="" class="offset-1 col-4">
+            <!-- <a href="" class="offset-1 col-4">
                 <div class="projets">
                     <h3 class="titres_boutons">mes projets</h3>
                 </div>
             </a> -->
-        <!-- <a href="" class="offset-2 col-4">
+            <!-- <a href="" class="offset-2 col-4">
                 <div class="propos">
                     <h3 class="titres_boutons">à propos</h3>
                 </div>
             </a> -->
+
+        </div>
 
     </main>
 

@@ -4,6 +4,9 @@
 }
 
 * {
+    /*
+    Commentaires de Marie-Michelle à Mathieu:  Ne jamais appliquer de style sur TOUT autre que le fameux box-sizing: border-box; 
+    Pour les style de typo, tu peux mettre ça sur body et ça va s'appliquer sur tout. */
     box-sizing: border-box;
     margin: 0%;
     font-family: satoshi;
@@ -13,6 +16,7 @@
 }
 
 body {
+    /*  Commentaires de Marie-Michelle à Mathieu: à retirer (tu pourras le mettre plutot que ta section.app */
     overflow-x: hidden;
 }
 
