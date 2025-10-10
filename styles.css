@@ -64,7 +64,7 @@ main {
 }
 
 .imageCarrousel {
-    background-image: url(./img/yousef-espanioly-TB8ziZJtYJ0-unsplash.jpg);
+    background-image: url(./img/terminus/terminus_1.png);
     height: 80vh;
     background-size: cover;
     z-index: 0;
@@ -133,7 +133,49 @@ main {
     filter: grayscale(100%);
 }
 
-.projets {
+.projets h3 {
+    text-align: center;
+    margin-bottom: 6rem;
+    font-size: 3rem;
+}
+
+.projet {
+    width: 32rem;
+    height: 24rem;
+    margin-bottom: 6rem;
+    box-shadow: 0.2rem 0.2rem 0px #f7f0f0 inset, -0.2rem -0.2rem 0px #1d1d1d inset;
+}
+
+.projet:hover {
+    filter: brightness(130%);
+}
+
+.terminus {
+    background-image: url(./img/terminus/terminus_1.png);
+    background-size: cover
+}
+
+.chasseur {
+    background-image: url(./img/chasseur_de_cranes/chasseur_2.png);
+    background-size: cover;
+}
+
+.fou {
+    background-image: url(./img/fou_de_vitesse/fou_1.png);
+    background-size: cover;
+}
+
+.troisd {
+    background-image: url(./img/3d/3d_4.png);
+    background-size: cover;
+}
+
+.paysage {
+    background-image: url(./img/3d/3d_3.png);
+    background-size: cover;
+}
+
+/* .projets {
     background-color: #919ea5;
     height: 20vh;
     margin-bottom: 30vh;
@@ -142,13 +184,9 @@ main {
     align-items: center;
     box-shadow: 0.2rem 0.2rem 0px #f7f0f0 inset, -0.2rem -0.2rem 0px #1d1d1d inset;
     color: #1d1d1d;
-}
+} */
 
-.projets:hover {
-    filter: brightness(130%);
-}
-
-.propos {
+/* .propos {
     background-color: #919ea5;
     height: 20vh;
     display: flex;
@@ -160,7 +198,7 @@ main {
 
 .propos:hover {
     filter: brightness(130%);
-}
+} */
 
 footer {
     background-color: #8A8D93;
