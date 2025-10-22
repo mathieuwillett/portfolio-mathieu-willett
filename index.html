@@ -24,20 +24,19 @@
         </a>
     </header>
 
-    <main>
+    <main class="appli-vue">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12 mb-5 imageCarrousel">
-
-                    <a href=""><img id="flecheG" src="./img/fleche.png"></a>
-
-                    <a href=""><img id="flecheD" src="./img/fleche.png"></a>
+                    <a @click="changeSelectedProject('back')"><img id="flecheG" src="./img/fleche.png"></a>
+                    <img v-if="selectedProject.images" :src="selectedProject.images[0]">
+                    <a @click="changeSelectedProject('next')"><img id="flecheD" src="./img/fleche.png"></a>
                 </div>
             </div>
 
             <a class="offset-1 col-3 titre" href="">
                 <div>
-                    <h2>titre du projet</h2>
+                    <h2>{{ selectedProject.title}}</h2>
                 </div>
             </a>
 
@@ -127,7 +126,7 @@
     <footer>
         <p>Mathieu Willett - Tous droits réservés</p>
     </footer>
-
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="script.js"></script>
 </body>
 

@@ -61,19 +61,28 @@ main {
 }
 
 .imageCarrousel {
-    background-image: url(./img/terminus/terminus_1.png);
+    position: relative;
     height: 80vh;
-    background-size: cover;
-    z-index: 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    overflow: hidden;
+}
+
+.imageCarrousel img {
+    position: relative;
+    height: 80vh;
+    width: 100%;
+    object-fit: cover;
+    z-index: 0;
 }
 
 #flecheG {
+    position: absolute;
     width: 6rem;
     height: 6rem;
+    z-index: 10;
 }
 
 #flecheG:hover {
@@ -81,9 +90,11 @@ main {
 }
 
 #flecheD {
+    position: absolute;
     width: 6rem;
     height: 6rem;
     transform: scaleX(-1);
+    z-index: 10;
 }
 
 #flecheD:hover {
@@ -173,7 +184,6 @@ main h3 {
     width: 40rem;
     height: 5rem;
     background-color: #919ea5;
-    text-align: center;
     margin: auto;
     transform: translateY(-4rem);
     border: 0.2rem solid;
@@ -181,6 +191,9 @@ main h3 {
     font-size: 1.8rem;
     color: #1d1d1d;
     font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .chasseur {
@@ -192,7 +205,9 @@ main h3 {
     width: 40rem;
     height: 5rem;
     background-color: #919ea5;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: auto;
     transform: translateY(-4rem);
     border: 0.2rem solid;
@@ -211,7 +226,9 @@ main h3 {
     width: 40rem;
     height: 5rem;
     background-color: #919ea5;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: auto;
     transform: translateY(-4rem);
     border: 0.2rem solid;
@@ -231,7 +248,9 @@ main h3 {
     width: 40rem;
     height: 5rem;
     background-color: #919ea5;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: auto;
     transform: translateY(-4rem);
     border: 0.2rem solid;
@@ -251,7 +270,9 @@ main h3 {
     width: 40rem;
     height: 5rem;
     background-color: #919ea5;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: auto;
     transform: translateY(-4rem);
     border: 0.2rem solid;
@@ -352,13 +373,32 @@ footer {
 }
 
 .description {
-    width: 60vw;
+    width: 35vw;
     height: 40vh;
     margin-bottom: 20vh;
     background-color: #8A8D93;
     padding: 2rem;
     border: 0.2rem solid;
     border-color: #f7f0f0 #1d1d1d #1d1d1d #f7f0f0;
+    margin-right: 5vw;
+}
+
+.used {
+    width: 30vw;
+    height: 40vh;
+    background-color: #8A8D93;
+    border: 0.2rem solid;
+    border-color: #f7f0f0 #1d1d1d #1d1d1d #f7f0f0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.used div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .description p {
