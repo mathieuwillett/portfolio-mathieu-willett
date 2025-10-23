@@ -53,7 +53,12 @@
     "title": "paysage",
     "category": "video",
     "images": [
-      "./img/3d/3d_4.png"
+      "./img/paysage/paysage intro.jpg",
+      "./img/paysage/paysage_2.jpg",
+      "./img/paysage/paysage_3.jpg",
+      "./img/paysage/paysage_4.jpg",
+      "./img/paysage/paysage_5.jpg",
+      "./img/paysage/paysage_6.jpg"
     ]
   }
 ]

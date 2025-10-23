@@ -420,6 +420,7 @@ footer {
 
 .galerie img {
     width: 40rem;
+    height: 24rem;
     border: 0.2rem solid;
     border-color: #f7f0f0 #1d1d1d #1d1d1d #f7f0f0;
 }
