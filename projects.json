@@ -5,11 +5,11 @@
     "category": "video",
     "images": [
       "./img/terminus/terminus_1.png",
-      "./img/terminus/terminus_2.png",
-      "./img/terminus/terminus_3.png",
-      "./img/terminus/terminus_4.png",
-      "./img/terminus/terminus_5.png",
-      "./img/terminus/terminus_6.png"
+      "./img/terminus/terminus_2.jpg",
+      "./img/terminus/terminus_3.jpg",
+      "./img/terminus/terminus_4.jpg",
+      "./img/terminus/terminus_5.jpg",
+      "./img/terminus/terminus_6.jpg"
     ]
   },
   {
@@ -17,10 +17,12 @@
     "title": "chasseur de crânes",
     "category": "VR",
     "images": [
-      "./img/chasseur_de_cranes/chasseur_1.png",
-      "./img/chasseur_de_cranes/chasseur_2.png",
-      "./img/chasseur_de_cranes/chasseur_3.png",
-      "./img/chasseur_de_cranes/chasseur_4.png"
+      "./img/chasseur_de_cranes/chasseur_1.jpg",
+      "./img/chasseur_de_cranes/chasseur_2.jpg",
+      "./img/chasseur_de_cranes/chasseur_3.jpg",
+      "./img/chasseur_de_cranes/chasseur_4.jpg",
+      "./img/chasseur_de_cranes/chasseur_5.jpg",
+      "./img/chasseur_de_cranes/chasseur_6.jpg"
     ]
   },
   {
