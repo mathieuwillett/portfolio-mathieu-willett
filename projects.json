@@ -10,7 +10,8 @@
       "./img/terminus/terminus_4.jpg",
       "./img/terminus/terminus_5.jpg",
       "./img/terminus/terminus_6.jpg"
-    ]
+    ],
+    "link": "./terminus.html"
   },
   {
     "id": 2,
@@ -23,32 +24,36 @@
       "./img/chasseur_de_cranes/chasseur_4.jpg",
       "./img/chasseur_de_cranes/chasseur_5.jpg",
       "./img/chasseur_de_cranes/chasseur_6.jpg"
-    ]
+    ],
+    "link": "./chasseur_de_cranes.html"
   },
   {
     "id": 3,
     "title": "fou de vitesse",
     "category": "jeu video",
     "images": [
-      "./img/fou_de_vitesse/fou_1.png",
-      "./img/fou_de_vitesse/fou_2.png",
       "./img/fou_de_vitesse/fou_3.png",
       "./img/fou_de_vitesse/fou_4.png",
+      "./img/fou_de_vitesse/fou_1.png",
       "./img/fou_de_vitesse/fou_5.png",
       "./img/fou_de_vitesse/fou_6.png",
       "./img/fou_de_vitesse/fou_7.png"
-    ]
+    ],
+    "link": "./fou_de_vitesse.html"
   },
   {
     "id": 4,
     "title": "prisonnier de soi-même",
     "category": "3D",
     "images": [
-      "./img/3d/3d_3.png",
-      "./img/3d/3d_1.png",
-      "./img/3d/3d_2.png",
-      "./img/3d/3d_4.png"
-    ]
+      "./img/3d/3d_3.jpg",
+      "./img/3d/3d_2.jpg",
+      "./img/3d/3d_1.jpg",
+      "./img/3d/3d_4.jpg",
+      "./img/3d/3d_5.jpg",
+      "./img/3d/3d_6.jpg"
+    ],
+    "link": "./prisonnier.html"
   },
   {
     "id": 5,
@@ -61,6 +66,7 @@
       "./img/paysage/paysage_4.jpg",
       "./img/paysage/paysage_5.jpg",
       "./img/paysage/paysage_6.jpg"
-    ]
+    ],
+    "link": "./paysage.html"
   }
 ]

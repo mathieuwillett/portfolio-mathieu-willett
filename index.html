@@ -25,13 +25,15 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12 mb-5 imageCarrousel">
-                    <a @click="changeSelectedProject('back')"><img id="flecheG" src="./img/fleche.png"></a>
-                    <img v-if="selectedProject.images" :src="selectedProject.images[0]">
-                    <a @click="changeSelectedProject('next')"><img id="flecheD" src="./img/fleche.png"></a>
+                    <transition name="fade" mode="out-in">
+                        <img v-if="selectedProject.images" :key="selectedProject.images[0]" :src="selectedProject.images[0]" alt="carrousel" class="carrousel-image" />
+                    </transition>
+                    <img id="flecheG" src="./img/fleche.png" @click="changeSelectedProject('back')" alt="back" />
+                    <img id="flecheD" src="./img/fleche.png" @click="changeSelectedProject('next')" alt="next" />
                 </div>
             </div>
 
-            <a class="offset-1 col-3 titre" href="">
+            <a class="offset-1 col-3 titre" :href="selectedProject.link">
                 <div>
                     <h2>{{selectedProject.title}}</h2>
                 </div>
@@ -85,7 +87,7 @@
                 </div>
                 <div class="projet troisd">
                     <a href="./prisonnier.html">
-                        <img src="./img/3d/3d_4.png">
+                        <img src="./img/3d/3d_4.jpg">
                         <div>prisonnier de soi-même</div>
                     </a>
                 </div>
