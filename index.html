@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="styles.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
 </head>
 
 <body>
@@ -23,104 +26,116 @@
 
     <main class="appli-vue">
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-12 mb-5 imageCarrousel">
-                    <transition name="fade" mode="out-in">
-                        <img v-if="selectedProject.images" :key="selectedProject.images[0]" :src="selectedProject.images[0]" alt="carrousel" class="carrousel-image" />
-                    </transition>
-                    <img id="flecheG" src="./img/fleche.png" @click="changeSelectedProject('back')" alt="back" />
-                    <img id="flecheD" src="./img/fleche.png" @click="changeSelectedProject('next')" alt="next" />
+
+            <div class="section-carrousel">
+                <div class="row">
+                    <div class="col-12 mb-5 imageCarrousel">
+                        <transition name="fade" mode="out-in">
+                            <img v-if="selectedProject.images" :key="selectedProject.images[0]"
+                                :src="selectedProject.images[0]" alt="carrousel" class="carrousel-image" />
+                        </transition>
+                        <img id="flecheG" src="./img/fleche.png" @click="changeSelectedProject('back')" alt="back" />
+                        <img id="flecheD" src="./img/fleche.png" @click="changeSelectedProject('next')" alt="next" />
+                    </div>
                 </div>
+
+
+                <a class="offset-1 col-3 titre" :href="selectedProject.link">
+                    <div>
+                        <h2>{{selectedProject.title}}</h2>
+                    </div>
+                </a>
             </div>
 
-            <a class="offset-1 col-3 titre" :href="selectedProject.link">
-                <div>
-                    <h2>{{selectedProject.title}}</h2>
-                </div>
-            </a>
-
-            <h3>compétences</h3>
-            <div class="row">
-                <div class="apps">
-                    <img class="logiciel" src="./img/logiciels/html.png">
-                    <img class="logiciel" src="./img/logiciels/css.png">
-                    <img class="logiciel" src="./img/logiciels/js.png">
-                    <img class="logiciel" src="./img/logiciels/csharp.png">
-                    <img class="logiciel" src="./img/logiciels/c++.png">
-                    <img class="logiciel" src="./img/logiciels/github.png">
-                    <img class="logiciel davinci" src="./img/logiciels/davinci.png">
-                    <img class="logiciel" src="./img/logiciels/vscode.png">
-                    <img class="logiciel" src="./img/logiciels/figma.png">
-                    <img class="logiciel" src="./img/logiciels/reaper.png">
-                    <img class="logiciel" src="./img/logiciels/maya.png">
-                    <img class="logiciel" src="./img/logiciels/unity.png">
-                    <img class="logiciel" src="./img/logiciels/touch.png">
-                    <img class="logiciel" src="./img/logiciels/pd.png">
-                    <img class="logiciel" src="./img/logiciels/platformio.png">
-                    <img class="logiciel" src="./img/logiciels/vs.png">
-                    <img class="logiciel davinci" src="./img/logiciels/max.png">
-                </div>
-            </div>
-
-        </div>
-
-        <h3>projets</h3>
-        <div class="groupe">
-            <div class="projets">
-                <div class="projet terminus">
-                    <a href="./terminus.html">
-                        <img src="./img/terminus/terminus_1.png">
-                        <div>terminus</div>
-                    </a>
-                </div>
-                <div class="projet chasseur">
-                    <a href="./chasseur_de_cranes.html">
-                        <img src="./img/chasseur_de_cranes/chasseur_1.jpg">
-                        <div>chasseur de crânes</div>
-                    </a>
-                </div>
-                <div class="projet fou">
-                    <a href="./fou_de_vitesse.html">
-                        <img src="./img/fou_de_vitesse/fou_1.png">
-                        <div>fou de vitesse</div>
-                    </a>
-                </div>
-                <div class="projet troisd">
-                    <a href="./prisonnier.html">
-                        <img src="./img/3d/3d_4.jpg">
-                        <div>prisonnier de soi-même</div>
-                    </a>
-                </div>
-                <div class="projet paysage">
-                    <a href="./paysage.html">
-                        <img src="./img/paysage/paysage intro.jpg">
-                        <div>paysage</div>
-                    </a>
+            <div class="section-competences">
+                <h3>compétences</h3>
+                <div class="row">
+                    <div class="apps">
+                        <img class="logiciel" src="./img/logiciels/html.png">
+                        <img class="logiciel" src="./img/logiciels/css.png">
+                        <img class="logiciel" src="./img/logiciels/js.png">
+                        <img class="logiciel" src="./img/logiciels/csharp.png">
+                        <img class="logiciel" src="./img/logiciels/c++.png">
+                        <img class="logiciel" src="./img/logiciels/github.png">
+                        <img class="logiciel davinci" src="./img/logiciels/davinci.png">
+                        <img class="logiciel" src="./img/logiciels/vscode.png">
+                        <img class="logiciel" src="./img/logiciels/figma.png">
+                        <img class="logiciel" src="./img/logiciels/reaper.png">
+                        <img class="logiciel" src="./img/logiciels/maya.png">
+                        <img class="logiciel" src="./img/logiciels/unity.png">
+                        <img class="logiciel" src="./img/logiciels/touch.png">
+                        <img class="logiciel" src="./img/logiciels/pd.png">
+                        <img class="logiciel" src="./img/logiciels/platformio.png">
+                        <img class="logiciel" src="./img/logiciels/vs.png">
+                        <img class="logiciel davinci" src="./img/logiciels/max.png">
+                    </div>
                 </div>
             </div>
         </div>
 
-        <h3>à propos</h3>
-        <div class="propos">
-            <div class="bio">
-                <div>
-                    <h4>Mathieu Willett</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore
-                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                        ut
-                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                        culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <p>ekiwillow@gmail.com</p>
-                    <p>lien linkedin</p>
-                </div>
-                <div class="moi">
-                    <img src="./img/placeholder.jpg">
+        <div class="section-projets">
+            <h3>projets</h3>
+            <div class="groupe">
+                <div class="projets">
+                    <div class="projet terminus">
+                        <a href="./terminus.html">
+                            <img src="./img/terminus/terminus_1.png">
+                            <div>terminus</div>
+                        </a>
+                    </div>
+                    <div class="projet chasseur">
+                        <a href="./chasseur_de_cranes.html">
+                            <img src="./img/chasseur_de_cranes/chasseur_1.jpg">
+                            <div>chasseur de crânes</div>
+                        </a>
+                    </div>
+                    <div class="projet fou">
+                        <a href="./fou_de_vitesse.html">
+                            <img src="./img/fou_de_vitesse/fou_1.png">
+                            <div>fou de vitesse</div>
+                        </a>
+                    </div>
+                    <div class="projet troisd">
+                        <a href="./prisonnier.html">
+                            <img src="./img/3d/3d_4.jpg">
+                            <div>prisonnier de soi-même</div>
+                        </a>
+                    </div>
+                    <div class="projet paysage">
+                        <a href="./paysage.html">
+                            <img src="./img/paysage/paysage intro.jpg">
+                            <div>paysage</div>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
 
+        <div class="section-propos">
+            <h3>à propos</h3>
+            <div class="propos">
+                <div class="bio">
+                    <div>
+                        <h4>Mathieu Willett</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore
+                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                            nisi
+                            ut
+                            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                            esse
+                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+                            in
+                            culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <p>ekiwillow@gmail.com</p>
+                        <p>lien linkedin</p>
+                    </div>
+                    <div class="moi">
+                        <img src="./img/placeholder.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
     <footer>
