@@ -428,6 +428,7 @@ footer {
 
 .description p {
     font-weight: 400;
+    font-size: 1.2rem;
 }
 
 .conteneur-collaborateurs {
@@ -599,5 +600,9 @@ footer {
 @media screen and (max-width: 700px) {
     .bio p {
         font-size: 0.8rem;
+    }
+
+    .description p {
+        font-size: 1rem;
     }
 }
