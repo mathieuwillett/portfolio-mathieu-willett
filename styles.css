@@ -125,18 +125,43 @@ main {
 
 .apps {
     background-color: #8A8D93;
+    width: 100vw;
     height: 30vh;
     margin-bottom: 20vh;
     border: 0.2rem solid;
     border-color: #f7f0f0 #8A8D93 #1d1d1d;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     align-items: center;
     overflow-x: hidden;
+    position: relative;
+}
+
+.logos {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    animation: scroll 20s linear infinite;
+    animation-play-state: paused;
+}
+
+.apps:hover .logos {
+    animation-play-state: running;
 }
 
 .logiciel {
-    width: 6rem;
+    width: 8rem;
+    flex-shrink: 0;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
 }
 
 .davinci {
@@ -173,6 +198,7 @@ main h3 {
 .projet img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
 .terminus {
@@ -470,4 +496,108 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media screen and (max-width: 1577px) {
+    #flecheG {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    #flecheD {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .logos {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        animation: scroll 15s linear infinite;
+        animation-play-state: running;
+    }
+
+    .projets {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .projet {
+        width: 90vw;
+        height: 35vh;
+    }
+
+    .projet div {
+        width: 100%;
+    }
+
+    .bio {
+        width: 90vw;
+    }
+
+    .bio p {
+        width: 50vw;
+        font-size: 1.2rem;
+    }
+
+    .moi {
+        width: 40vw;
+    }
+
+    .titre_projet {
+        width: 100vw;
+    }
+
+    .conteneur-description {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .description {
+        width: 90vw;
+        margin-right: 0;
+        margin-bottom: 5vh;
+    }
+
+    .used {
+        width: 90vw;
+        margin-bottom: 20vh;
+    }
+
+    .used img {
+        width: 20vw;
+    }
+
+    .collaborateurs {
+        width: 90vw;
+        flex-direction: column;
+    }
+
+    .processus {
+        width: 90vw;
+    }
+
+    .galerie {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .galerie img {
+        width: 90vw;
+        height: auto;
+    }
+
+    .oeuvre {
+        width: 90vw;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .bio p {
+        font-size: 0.8rem;
+    }
 }

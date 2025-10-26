@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-     gsap.from(".section-propos", {
+    gsap.from(".section-propos", {
         opacity: 0,
         duration: 1,
         scrollTrigger: {
@@ -159,5 +159,3 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
-
-

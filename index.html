@@ -25,50 +25,66 @@
     </header>
 
     <main class="appli-vue">
-        <div class="container-fluid">
 
-            <div class="section-carrousel">
-                <div class="row">
-                    <div class="col-12 mb-5 imageCarrousel">
-                        <transition name="fade" mode="out-in">
-                            <img v-if="selectedProject.images" :key="selectedProject.images[0]"
-                                :src="selectedProject.images[0]" alt="carrousel" class="carrousel-image" />
-                        </transition>
-                        <img id="flecheG" src="./img/fleche.png" @click="changeSelectedProject('back')" alt="back" />
-                        <img id="flecheD" src="./img/fleche.png" @click="changeSelectedProject('next')" alt="next" />
-                    </div>
+        <div class="section-carrousel">
+            <div class="row">
+                <div class="col-12 mb-5 imageCarrousel">
+                    <transition name="fade" mode="out-in">
+                        <img v-if="selectedProject.images" :key="selectedProject.images[0]"
+                            :src="selectedProject.images[0]" alt="carrousel" class="carrousel-image" />
+                    </transition>
+                    <img id="flecheG" src="./img/fleche.png" @click="changeSelectedProject('back')" alt="back" />
+                    <img id="flecheD" src="./img/fleche.png" @click="changeSelectedProject('next')" alt="next" />
                 </div>
-
-
-                <a class="offset-1 col-3 titre" :href="selectedProject.link">
-                    <div>
-                        <h2>{{selectedProject.title}}</h2>
-                    </div>
-                </a>
             </div>
 
-            <div class="section-competences">
-                <h3>compétences</h3>
-                <div class="row">
-                    <div class="apps">
-                        <img class="logiciel" src="./img/logiciels/html.png">
-                        <img class="logiciel" src="./img/logiciels/css.png">
-                        <img class="logiciel" src="./img/logiciels/js.png">
-                        <img class="logiciel" src="./img/logiciels/csharp.png">
-                        <img class="logiciel" src="./img/logiciels/c++.png">
-                        <img class="logiciel" src="./img/logiciels/github.png">
-                        <img class="logiciel davinci" src="./img/logiciels/davinci.png">
-                        <img class="logiciel" src="./img/logiciels/vscode.png">
-                        <img class="logiciel" src="./img/logiciels/figma.png">
-                        <img class="logiciel" src="./img/logiciels/reaper.png">
-                        <img class="logiciel" src="./img/logiciels/maya.png">
-                        <img class="logiciel" src="./img/logiciels/unity.png">
-                        <img class="logiciel" src="./img/logiciels/touch.png">
-                        <img class="logiciel" src="./img/logiciels/pd.png">
-                        <img class="logiciel" src="./img/logiciels/platformio.png">
-                        <img class="logiciel" src="./img/logiciels/vs.png">
-                        <img class="logiciel davinci" src="./img/logiciels/max.png">
-                    </div>
+
+            <a class="offset-xxl-1 col-xxl-3 col-xl-12 titre" :href="selectedProject.link">
+                <div>
+                    <h2>{{selectedProject.title}}</h2>
+                </div>
+            </a>
+        </div>
+
+        <div class="section-competences">
+            <h3>compétences</h3>
+            <div class="apps">
+                <div class="logos">
+                    <img class="logiciel" src="./img/logiciels/html.png">
+                    <img class="logiciel" src="./img/logiciels/css.png">
+                    <img class="logiciel" src="./img/logiciels/js.png">
+                    <img class="logiciel" src="./img/logiciels/csharp.png">
+                    <img class="logiciel" src="./img/logiciels/c++.png">
+                    <img class="logiciel" src="./img/logiciels/github.png">
+                    <img class="logiciel davinci" src="./img/logiciels/davinci.png">
+                    <img class="logiciel" src="./img/logiciels/vscode.png">
+                    <img class="logiciel" src="./img/logiciels/figma.png">
+                    <img class="logiciel" src="./img/logiciels/reaper.png">
+                    <img class="logiciel" src="./img/logiciels/maya.png">
+                    <img class="logiciel" src="./img/logiciels/unity.png">
+                    <img class="logiciel" src="./img/logiciels/touch.png">
+                    <img class="logiciel" src="./img/logiciels/pd.png">
+                    <img class="logiciel" src="./img/logiciels/platformio.png">
+                    <img class="logiciel" src="./img/logiciels/vs.png">
+                    <img class="logiciel davinci" src="./img/logiciels/max.png">
+
+                    <img class="logiciel" src="./img/logiciels/html.png">
+                    <img class="logiciel" src="./img/logiciels/css.png">
+                    <img class="logiciel" src="./img/logiciels/js.png">
+                    <img class="logiciel" src="./img/logiciels/csharp.png">
+                    <img class="logiciel" src="./img/logiciels/c++.png">
+                    <img class="logiciel" src="./img/logiciels/github.png">
+                    <img class="logiciel davinci" src="./img/logiciels/davinci.png">
+                    <img class="logiciel" src="./img/logiciels/vscode.png">
+                    <img class="logiciel" src="./img/logiciels/figma.png">
+                    <img class="logiciel" src="./img/logiciels/reaper.png">
+                    <img class="logiciel" src="./img/logiciels/maya.png">
+                    <img class="logiciel" src="./img/logiciels/unity.png">
+                    <img class="logiciel" src="./img/logiciels/touch.png">
+                    <img class="logiciel" src="./img/logiciels/pd.png">
+                    <img class="logiciel" src="./img/logiciels/platformio.png">
+                    <img class="logiciel" src="./img/logiciels/vs.png">
+                    <img class="logiciel davinci" src="./img/logiciels/max.png">
                 </div>
             </div>
         </div>
