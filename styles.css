@@ -336,13 +336,11 @@ main h3 {
 .bio p {
     width: 40vw;
     font-size: 1.5rem;
-    text-align: justify;
     padding: 1rem;
 }
 
 .moi {
     width: 30vw;
-    background-color: #f7f0f0;
     height: 70vh;
 }
 
