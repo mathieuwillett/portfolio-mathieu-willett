@@ -22,8 +22,7 @@ const appli = Vue.createApp({
                 this.projet = this.projetsArr.find(p => p.id === id);
 
                 if (this.projet) {
-                    this.selectedProject = this.projet;
-                    this.index = this.projetsArr.findIndex(p => p.id === id);
+                    this.projetsArr.findIndex(p => p.id === id);
                 } else {
                     console.warn("Aucun projet trouvé pour l'ID :", id);
                 }
