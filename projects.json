@@ -1,4 +1,5 @@
-[{
+[
+  {
     "id": 1,
     "title": "terminus",
     "category": "video",
@@ -36,7 +37,19 @@
       "./img/chasseur_de_cranes/chasseur_5.jpg",
       "./img/chasseur_de_cranes/chasseur_6.jpg"
     ],
-    "link": "./chasseur_de_cranes.html"
+    "link": "./chasseur_de_cranes.html",
+    "description": "Chasseur de Crânes est un jeu en réalité virtuelle où le joueur incarne un chevalier explorant un donjon sombre. Il doit affronter des crânes volants qui le poursuivent et vaincre le boss final pour survivre. Un deuxième joueur peut participer en modifiant le niveau de lumière des torches et la vitesse des crânes. Il peut ainsi rendre la partie plus difficile pour le chevalier et influencer directement son expérience de jeu. Cette idée crée une interaction amusante entre les deux joueurs et ajoute une dose de tension et de stratégie à chaque partie.",
+    "logiciels": [
+      "./img/logiciels/unity.png",
+      "./img/logiciels/vs.png",
+      "./img/logiciels/touch.png"
+    ],
+    "collaborateurs": [
+      "Alexandre Gendron",
+      "Mikael Arseneau"
+    ],
+    "processus": "salut",
+    "video": "https://www.youtube.com/embed/4QJ_51Vos0Q?si=ZqX3hF26_5ImH_1F"
   },
   {
     "id": 3,
@@ -50,7 +63,14 @@
       "./img/fou_de_vitesse/fou_6.png",
       "./img/fou_de_vitesse/fou_7.png"
     ],
-    "link": "./fou_de_vitesse.html"
+    "link": "./fou_de_vitesse.html",
+    "description": "Fou de vitesse est un jeu de course rétro en vue de dessus (top-down). Jusqu'à trois joueurs s'affrontent sur un circuit rapide et coloré. Le but est de terminer les trois tours le plus vite possible tout en ramassant un maximum de pièces. Le joueur qui combine la meilleure vitesse et le plus de pièces remporte la partie. Fou devitesse offre une expérience amusante, compétitive et accessible à tous.",
+    "logiciels": [
+      "./img/logiciels/vscode.png",
+      "./img/logiciels/figma.png",
+      "./img/logiciels/js.png"
+    ],
+    "video": "https://itch.io/embed/3166710"
   },
   {
     "id": 4,
@@ -64,7 +84,14 @@
       "./img/3d/3d_5.jpg",
       "./img/3d/3d_6.jpg"
     ],
-    "link": "./prisonnier.html"
+    "link": "./prisonnier.html",
+    "description": "Prisonnier de soi-même est un court-métrage d'animation 3D qui raconte l'histoire d'une personne dans le coma. Le film montre ce qu'elle ressent à l'intérieur de sa tête : la confusion, la peur et la sensation d'être perdue. Peu à peu, on voit qu'elle se noie dans ses pensées, symbolisant sa lutte pour reprendre le contrôle ou s'échapper de son esprit. Prisonnier de soi-même est une réflexion sur la solitude et le combat intérieur.",
+    "logiciels": [
+      "./img/logiciels/maya.png",
+      "./img/logiciels/davinci.png",
+      "./img/logiciels/reaper.png"
+    ],
+    "video": "https://www.youtube.com/embed/vqFKLkE7WQo?si=tLFGkQz_9TzN1NkW"
   },
   {
     "id": 5,
@@ -78,6 +105,13 @@
       "./img/paysage/paysage_5.jpg",
       "./img/paysage/paysage_6.jpg"
     ],
-    "link": "./paysage.html"
+    "link": "./paysage.html",
+    "description": "Paysage est un projet multimédia interactif qui mélange sons et images. L'utilisateur peut contrôler l'environnement visuel et sonore grâce à des claviers MIDI, au mouvement et à la voix. Cela crée une expérience où chaque action influence directement ce qui se passe à l'écran. La vidéo utilise des scènes de mon projet d'animation 3D Prisonnier de soi-même, réutilisées pour créer une version plus abstraite et artistique. Le but est d'offrir une expérience immersive où le spectateur explore un monde visuel et sonore en constante évolution.",
+    "logiciels": [
+      "./img/logiciels/maya.png",
+      "./img/logiciels/touch.png",
+      "./img/logiciels/max.png"
+    ],
+    "video": "https://www.youtube.com/embed/4QJ_51Vos0Q?si=ZqX3hF26_5ImH_1F"
   }
 ]
