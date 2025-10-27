@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>terminus</title>
+    <title>Projet</title>
     <link rel="stylesheet" href="styles.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
@@ -24,70 +24,57 @@
         </a>
     </header>
 
-    <main>
+    <main class="appli-vue">
 
-        <div class="section-hero">
+        <div class="section-hero" v-if="projet && projet.images && projet.images.length">
             <div class="hero">
-                <img src="./img/terminus/terminus_1.png">
+                <img :src="projet.images[0]">
             </div>
 
             <div class="conteneur-titre">
                 <div class="titre_projet">
-                    <h2>terminus</h2>
+                    <h2>{{projet.title}}</h2>
                 </div>
             </div>
         </div>
 
-        <div class="section-description">
+        <div class="section-description" v-if="projet">
             <h3 class="titre-section">description</h3>
             <div class="conteneur-description">
                 <div class="description">
-                    <p>Terminus est un court-métrage tourné entièrement avec des lentilles macro. Cette approche crée un
-                        univers visuel unique, rempli de détails et de textures. Le film raconte les conséquences
-                        dramatiques de la conduite sous l’emprise de l’alcool. Grâce à la macrophotographie, chaque image devient intense et symbolique. On ressent la
-                        confusion, la perte de contrôle et la fragilité du moment. Terminus veut faire réfléchir sur la
-                        responsabilité et montrer à quel point un simple geste peut tout changer.</p>
+                    <p>{{projet.description}}</p>
                 </div>
                 <div class="used">
-                    <img class="logiciel davinci" src="./img/logiciels/davinci.png">
-                    <img class="logiciel" src="./img/logiciels/reaper.png">
+                    <img v-for="logiciel in projet.logiciels" :key="logiciel" class="logiciel" :src="logiciel">
                 </div>
             </div>
         </div>
 
-        <div class="section-collaborateurs">
+        <div class="section-collaborateurs" v-if="projet && projet.collaborateurs">
             <h3>collaborateurs</h3>
             <div class="conteneur-collaborateurs">
                 <div class="collaborateurs">
-                    <h4>Alexandre Gendron</h4>
-                    <h4>Mikael Arseneau</h4>
-                    <h4>Justin Montpetit</h4>
-                    <h4>Sandrine Jean</h4>
+                    <h4 v-for="collabo in projet.collaborateurs" :key="collabo">{{collabo}}</h4>
                 </div>
             </div>
         </div>
 
-        <div class="section-galerie">
+        <div class="section-galerie" v-if="projet && projet.images">
             <h3>galerie</h3>
             <div class="conteneur-galerie">
                 <div class="galerie">
-                    <img src="./img/terminus/terminus_1.png">
-                    <img src="./img/terminus/terminus_2.jpg">
-                    <img src="./img/terminus/terminus_3.jpg">
-                    <img src="./img/terminus/terminus_4.jpg">
-                    <img src="./img/terminus/terminus_5.jpg">
-                    <img src="./img/terminus/terminus_6.jpg">
+                    <img v-for="(img, i) in projet.images" :key="i" :src="img" :alt="projet.title">
                 </div>
             </div>
         </div>
 
-        <div class="section-oeuvre">
+        <div class="section-oeuvre" v-if="projet && projet.video">
             <h3>oeuvre</h3>
             <div class="conteneur-oeuvre">
                 <div class="oeuvre">
 
                     <iframe width="1000" height="600"
-                        src="https://www.youtube.com/embed/r0QNP7BkuOE?si=mcvAb3OuA2FqHqFR" title="YouTube video player"
+                        :src="projet.video" title="YouTube video player"
                         frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

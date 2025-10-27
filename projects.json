@@ -1,5 +1,4 @@
-[
-  {
+[{
     "id": 1,
     "title": "terminus",
     "category": "video",
@@ -11,7 +10,19 @@
       "./img/terminus/terminus_5.jpg",
       "./img/terminus/terminus_6.jpg"
     ],
-    "link": "./terminus.html"
+    "link": "./terminus.html",
+    "description": "Terminus est un court-métrage tourné entièrement avec des lentilles macro. Cette approche crée un univers visuel unique, rempli de détails et de textures.Le film raconte les conséquences dramatiques de la conduite sous l' emprise de l' alcool.Grâce à la macrophotographie, chaque image devient intense et symbolique.On ressent laconfusion, la perte de contrôle et la fragilité du moment.Terminus veut faire réfléchir sur la responsabilité et montrer à quel point un simple geste peut tout changer.",
+    "logiciels": [
+      "./img/logiciels/davinci.png",
+      "./img/logiciels/reaper.png"
+    ],
+    "collaborateurs": [
+      "Alexandre Gendron",
+      "Mikael Arseneau",
+      "Justin Montpetit",
+      "Sandrine Jean"
+    ],
+    "video": "https://www.youtube.com/embed/r0QNP7BkuOE?si=mcvAb3OuA2FqHqFR"
   },
   {
     "id": 2,

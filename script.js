@@ -4,20 +4,29 @@ const appli = Vue.createApp({
         return {
             projetsArr: [],
             selectedProject: [],
-            index: 0
+            index: 0,
+            projet: {}
         };
     },
     mounted() {
-        console.log("L'app Vue a été créée et montée au DOM (mounted) !");
 
-        this.message = "Vue a été chargé et montée au DOM (mounted) !";
+        const params = new URLSearchParams(window.location.search)
 
         fetch("./projects.json")
             .then(data => data.json())
             .then(result => {
                 console.log(result);
                 this.projetsArr = result
-                this.selectedProject = this.projetsArr[0]
+
+                const id = parseInt(params.get("proj-id"));
+                this.projet = this.projetsArr.find(p => p.id === id);
+
+                if (this.projet) {
+                    this.selectedProject = this.projet;
+                    this.index = this.projetsArr.findIndex(p => p.id === id);
+                } else {
+                    console.warn("Aucun projet trouvé pour l'ID :", id);
+                }
             });
     },
     methods: {
