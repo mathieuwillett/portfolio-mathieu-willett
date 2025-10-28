@@ -11,7 +11,7 @@
       "./img/terminus/terminus_5.jpg",
       "./img/terminus/terminus_6.jpg"
     ],
-    "link": "./terminus.html",
+    "link": "projet.html?proj-id=1",
     "description": "Terminus est un court-métrage tourné entièrement avec des lentilles macro. Cette approche crée un univers visuel unique, rempli de détails et de textures.Le film raconte les conséquences dramatiques de la conduite sous l' emprise de l' alcool.Grâce à la macrophotographie, chaque image devient intense et symbolique.On ressent laconfusion, la perte de contrôle et la fragilité du moment.Terminus veut faire réfléchir sur la responsabilité et montrer à quel point un simple geste peut tout changer.",
     "logiciels": [
       "./img/logiciels/davinci.png",
@@ -37,7 +37,7 @@
       "./img/chasseur_de_cranes/chasseur_5.jpg",
       "./img/chasseur_de_cranes/chasseur_6.jpg"
     ],
-    "link": "./chasseur_de_cranes.html",
+    "link": "projet.html?proj-id=2",
     "description": "Chasseur de Crânes est un jeu en réalité virtuelle où le joueur incarne un chevalier explorant un donjon sombre. Il doit affronter des crânes volants qui le poursuivent et vaincre le boss final pour survivre. Un deuxième joueur peut participer en modifiant le niveau de lumière des torches et la vitesse des crânes. Il peut ainsi rendre la partie plus difficile pour le chevalier et influencer directement son expérience de jeu. Cette idée crée une interaction amusante entre les deux joueurs et ajoute une dose de tension et de stratégie à chaque partie.",
     "logiciels": [
       "./img/logiciels/unity.png",
@@ -63,7 +63,7 @@
       "./img/fou_de_vitesse/fou_6.png",
       "./img/fou_de_vitesse/fou_7.png"
     ],
-    "link": "./fou_de_vitesse.html",
+    "link": "projet.html?proj-id=3",
     "description": "Fou de vitesse est un jeu de course rétro en vue de dessus (top-down). Jusqu'à trois joueurs s'affrontent sur un circuit rapide et coloré. Le but est de terminer les trois tours le plus vite possible tout en ramassant un maximum de pièces. Le joueur qui combine la meilleure vitesse et le plus de pièces remporte la partie. Fou devitesse offre une expérience amusante, compétitive et accessible à tous.",
     "logiciels": [
       "./img/logiciels/vscode.png",
@@ -84,7 +84,7 @@
       "./img/3d/3d_5.jpg",
       "./img/3d/3d_6.jpg"
     ],
-    "link": "./prisonnier.html",
+    "link": "projet.html?proj-id=4",
     "description": "Prisonnier de soi-même est un court-métrage d'animation 3D qui raconte l'histoire d'une personne dans le coma. Le film montre ce qu'elle ressent à l'intérieur de sa tête : la confusion, la peur et la sensation d'être perdue. Peu à peu, on voit qu'elle se noie dans ses pensées, symbolisant sa lutte pour reprendre le contrôle ou s'échapper de son esprit. Prisonnier de soi-même est une réflexion sur la solitude et le combat intérieur.",
     "logiciels": [
       "./img/logiciels/maya.png",
@@ -105,7 +105,7 @@
       "./img/paysage/paysage_5.jpg",
       "./img/paysage/paysage_6.jpg"
     ],
-    "link": "./paysage.html",
+    "link": "projet.html?proj-id=5",
     "description": "Paysage est un projet multimédia interactif qui mélange sons et images. L'utilisateur peut contrôler l'environnement visuel et sonore grâce à des claviers MIDI, au mouvement et à la voix. Cela crée une expérience où chaque action influence directement ce qui se passe à l'écran. La vidéo utilise des scènes de mon projet d'animation 3D Prisonnier de soi-même, réutilisées pour créer une version plus abstraite et artistique. Le but est d'offrir une expérience immersive où le spectateur explore un monde visuel et sonore en constante évolution.",
     "logiciels": [
       "./img/logiciels/maya.png",

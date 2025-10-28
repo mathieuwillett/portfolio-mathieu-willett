@@ -45,7 +45,8 @@
                     <p>{{projet.description}}</p>
                 </div>
                 <div class="used">
-                    <img v-for="logiciel in projet.logiciels" :key="logiciel" class="logiciel" :src="logiciel">
+                    <img v-for="logiciel in projet.logiciels" :key="logiciel" class="logiciel" :src="logiciel"
+                        :class="{'davinci': logiciel.includes('davinci'),'max': logiciel.includes('max')}">
                 </div>
             </div>
         </div>
@@ -59,7 +60,7 @@
             </div>
         </div>
 
-         <div class="section-processus" v-if="projet && projet.processus">
+        <div class="section-processus" v-if="projet && projet.processus">
             <h3>processus de création</h3>
             <div class="conteneur-processus">
                 <div class="processus">
@@ -67,13 +68,20 @@
                 </div>
             </div>
         </div>
-
+        <a id="galerie"></a>
         <div class="section-galerie" v-if="projet && projet.images">
             <h3>galerie</h3>
             <div class="conteneur-galerie">
                 <div class="galerie">
-                    <img v-for="(img, i) in projet.images" :key="i" :src="img" :alt="projet.title">
+                    <a v-for="(img, i) in projet.images" :key="i" :href="'#img' + i">
+                        <img :src="img" :alt="projet.title" class="galerie-img">
+                    </a>
                 </div>
+            </div>
+
+            <div v-for="(img, i) in projet.images" :key="'lightbox' + i" :id="'img' + i" class="lightbox">
+                <a href="#galerie" class="lightbox-close"></a>
+                <img :src="img" class="lightbox-image" :alt="projet.title">
             </div>
         </div>
 
@@ -82,9 +90,7 @@
             <div class="conteneur-oeuvre">
                 <div class="oeuvre">
 
-                    <iframe width="1000" height="600"
-                        :src="projet.video" title="YouTube video player"
-                        frameborder="0"
+                    <iframe width="1000" height="600" :src="projet.video" title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 

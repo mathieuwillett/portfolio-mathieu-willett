@@ -15,6 +15,7 @@ const appli = Vue.createApp({
         fetch("./projects.json")
             .then(data => data.json())
             .then(result => {
+
                 console.log(result);
                 this.projetsArr = result
 
@@ -26,6 +27,7 @@ const appli = Vue.createApp({
                 } else {
                     console.warn("Aucun projet trouvé pour l'ID :", id);
                 }
+                this.selectedProject = this.projetsArr[this.index]
             });
     },
     methods: {
