@@ -429,6 +429,23 @@ footer {
     font-size: 1.2rem;
 }
 
+.conteneur-specs {
+    display: flex;
+    justify-content: center;
+}
+
+.specs {
+    width: 70vw;
+    height: 30vh;
+    background-color: #8A8D93;
+    border: 0.2rem solid;
+    border-color: #f7f0f0 #1d1d1d #1d1d1d #f7f0f0;
+    margin-bottom: 20vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
 .conteneur-collaborateurs {
     display: flex;
     justify-content: center;

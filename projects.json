@@ -2,7 +2,6 @@
   {
     "id": 1,
     "title": "terminus",
-    "category": "video",
     "images": [
       "./img/terminus/terminus_1.png",
       "./img/terminus/terminus_2.jpg",
@@ -12,7 +11,7 @@
       "./img/terminus/terminus_6.jpg"
     ],
     "link": "projet.html?proj-id=1",
-    "description": "Terminus est un court-métrage tourné entièrement avec des lentilles macro. Cette approche crée un univers visuel unique, rempli de détails et de textures.Le film raconte les conséquences dramatiques de la conduite sous l' emprise de l' alcool.Grâce à la macrophotographie, chaque image devient intense et symbolique.On ressent laconfusion, la perte de contrôle et la fragilité du moment.Terminus veut faire réfléchir sur la responsabilité et montrer à quel point un simple geste peut tout changer.",
+    "description": "Terminus est un court-métrage tourné entièrement avec des lentilles macro. Cette approche crée un univers visuel unique, rempli de détails et de textures. Le film raconte les conséquences dramatiques de la conduite sous l' emprise de l' alcool. Grâce à la macrophotographie, chaque image devient intense et symbolique.On ressent laconfusion, la perte de contrôle et la fragilité du moment. Terminus veut faire réfléchir sur la responsabilité et montrer à quel point un simple geste peut tout changer.",
     "logiciels": [
       "./img/logiciels/davinci.png",
       "./img/logiciels/reaper.png"
@@ -23,12 +22,14 @@
       "Justin Montpetit",
       "Sandrine Jean"
     ],
-    "video": "https://www.youtube.com/embed/r0QNP7BkuOE?si=mcvAb3OuA2FqHqFR"
+    "video": "https://www.youtube.com/embed/r0QNP7BkuOE?si=mcvAb3OuA2FqHqFR",
+    "role": "réalisateur",
+    "cours": "vidéo 2",
+    "type": "en équipe"
   },
   {
     "id": 2,
     "title": "chasseur de crânes",
-    "category": "VR",
     "images": [
       "./img/chasseur_de_cranes/chasseur_1.jpg",
       "./img/chasseur_de_cranes/chasseur_2.jpg",
@@ -49,12 +50,14 @@
       "Mikael Arseneau"
     ],
     "processus": "salut",
-    "video": "https://www.youtube.com/embed/4QJ_51Vos0Q?si=ZqX3hF26_5ImH_1F"
+    "video": "https://www.youtube.com/embed/4QJ_51Vos0Q?si=ZqX3hF26_5ImH_1F",
+    "role": "programmeur",
+    "cours": "réalité mixte",
+    "type": "en équipe"
   },
   {
     "id": 3,
     "title": "fou de vitesse",
-    "category": "jeu video",
     "images": [
       "./img/fou_de_vitesse/fou_3.png",
       "./img/fou_de_vitesse/fou_4.png",
@@ -70,12 +73,14 @@
       "./img/logiciels/figma.png",
       "./img/logiciels/js.png"
     ],
-    "video": "https://itch.io/embed/3166710"
+    "video": "https://itch.io/embed/3166710",
+    "role": "programmeur",
+    "cours": "intéractivité ludique",
+    "type": "solo"
   },
   {
     "id": 4,
     "title": "prisonnier de soi-même",
-    "category": "3D",
     "images": [
       "./img/3d/3d_3.jpg",
       "./img/3d/3d_2.jpg",
@@ -91,12 +96,14 @@
       "./img/logiciels/davinci.png",
       "./img/logiciels/reaper.png"
     ],
-    "video": "https://www.youtube.com/embed/vqFKLkE7WQo?si=tLFGkQz_9TzN1NkW"
+    "video": "https://www.youtube.com/embed/vqFKLkE7WQo?si=tLFGkQz_9TzN1NkW",
+    "role": "animateur",
+    "cours": "animation 3D",
+    "type": "solo"
   },
   {
     "id": 5,
     "title": "paysage",
-    "category": "video",
     "images": [
       "./img/paysage/paysage intro.jpg",
       "./img/paysage/paysage_2.jpg",
@@ -112,6 +119,9 @@
       "./img/logiciels/touch.png",
       "./img/logiciels/max.png"
     ],
-    "video": "https://www.youtube.com/embed/4QJ_51Vos0Q?si=ZqX3hF26_5ImH_1F"
+    "video": "https://www.youtube.com/embed/4QJ_51Vos0Q?si=ZqX3hF26_5ImH_1F",
+    "role": "créateur",
+    "cours": "traitement audiovisuel & audio 2",
+    "type": "solo"
   }
 ]

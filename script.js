@@ -166,6 +166,17 @@ const appli = Vue.createApp({
                     toggleActions: "play none none reverse",
                 }
             });
+
+             gsap.from(".section-specs", {
+                opacity: 0,
+                duration: 1,
+                scrollTrigger: {
+                    trigger: ".section-specs",
+                    start: "top 80%",
+                    end: "bottom 60%",
+                    toggleActions: "play none none reverse",
+                }
+            });
         }
     }
 });

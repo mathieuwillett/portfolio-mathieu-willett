@@ -51,6 +51,26 @@
             </div>
         </div>
 
+        <div class="section-specs" v-if="projet">
+            <h3 class="titre-section">spécifications</h3>
+            <div class="conteneur-specs">
+                <div class="specs">
+                    <div>
+                        <h5>rôle</h5>
+                        <h4>{{projet.role}}</h4>
+                    </div>
+                    <div>
+                        <h5>cours du projet</h5>
+                        <h4>{{projet.cours}}</h4>
+                    </div>
+                    <div>
+                        <h5>type de projet</h5>
+                        <h4>{{projet.type}}</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="section-collaborateurs" v-if="projet && projet.collaborateurs">
             <h3>collaborateurs</h3>
             <div class="conteneur-collaborateurs">

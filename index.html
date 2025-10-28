@@ -31,7 +31,6 @@
     commenter le code
     mettre site en ligne
     processus de creation
-    images grosses quand cliquées
      -->
 
     <main class="appli-vue">
@@ -41,10 +40,10 @@
                 <div class="col-12 mb-5 imageCarrousel">
                     <transition name="fade" mode="out-in">
                         <img v-if="selectedProject.images" :key="selectedProject.images[0]"
-                            :src="selectedProject.images[0]" alt="carrousel" class="carrousel-image" />
+                            :src="selectedProject.images[0]" alt="carrousel" class="carrousel-image"/>
                     </transition>
-                    <img id="flecheG" src="./img/fleche.png" @click="changeSelectedProject('back')" alt="back" />
-                    <img id="flecheD" src="./img/fleche.png" @click="changeSelectedProject('next')" alt="next" />
+                    <img id="flecheG" src="./img/fleche.png" @click="changeSelectedProject('back')" alt="back"/>
+                    <img id="flecheD" src="./img/fleche.png" @click="changeSelectedProject('next')" alt="next"/>
                 </div>
             </div>
 
