@@ -621,7 +621,7 @@ footer {
     .description {
         width: 90vw;
         margin-right: 0;
-        margin-bottom: 5vh;
+        margin-bottom: 20vh;
     }
 
     .used {
@@ -656,6 +656,12 @@ footer {
 
     .oeuvre {
         width: 90vw;
+    }
+
+    .specs {
+        width: 90vw;
+        height: 70vh;
+        flex-direction: column;
     }
 }
 
