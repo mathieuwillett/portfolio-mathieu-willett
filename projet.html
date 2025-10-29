@@ -2,6 +2,7 @@
 <html lang="fr">
 
 <head>
+    <!-- meta pour référencement et partage -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>portfolio - mathieu willett</title>
@@ -23,6 +24,7 @@
     <meta name="twitter:description" content="Portfolio de Mathieu Willett — projets interactifs, web et multimédias.">
     <meta name="twitter:image" content="https://ton-domaine.com/img/moi2.jpg">
     <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+    <!-- link css, bootstrap et gsap -->
     <link rel="stylesheet" href="styles.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
@@ -41,13 +43,16 @@
         </a>
     </header>
 
+    <!-- app vue -->
     <main class="appli-vue">
 
+        <!-- section hero, si projet, projet.images et projet.images.length est true, section apparait -->
         <div class="section-hero" v-if="projet && projet.images && projet.images.length">
             <div class="hero">
+                <!-- image est l'image 0 de projet -->
                 <img :src="projet.images[0]" :alt="projet.title">
             </div>
-
+            <!-- titre et description courte -->
             <div class="conteneur-titre">
                 <div class="titre_projet">
                     <h2>{{projet.title}}</h2>
@@ -56,13 +61,16 @@
             </div>
         </div>
 
+        <!-- section description si projet est true apparait -->
         <div class="section-description" v-if="projet">
             <h3 class="titre-section">description</h3>
             <div class="conteneur-description">
                 <div class="description">
+                    <!-- description -->
                     <p>{{projet.description}}</p>
                 </div>
                 <div class="used">
+                    <!-- ça loop les images logiciels du projects.json et ça duplique les img et si le logiciel est davinci, ça rajoute la classe davinci -->
                     <img v-for="logiciel in projet.logiciels" :key="logiciel" class="logiciel" :src="logiciel"
                         :class="{'davinci': logiciel.includes('davinci'),'max': logiciel.includes('max')}"
                         alt="images-logiciel-utilisés">
@@ -70,9 +78,11 @@
             </div>
         </div>
 
+        <!-- section specs si projet existe -->
         <div class="section-specs" v-if="projet">
             <h3 class="titre-section">spécifications</h3>
             <div class="conteneur-specs">
+                <!-- role, cours et type -->
                 <div class="specs">
                     <div>
                         <h5>rôle</h5>
@@ -90,52 +100,62 @@
             </div>
         </div>
 
+        <!-- section collaborateurs si projet, collaborateurs et roles existent -->
         <div class="section-collaborateurs" v-if="projet && projet.collaborateurs && projet.roles">
             <h3>collaborateurs</h3>
             <div class="conteneur-collaborateurs">
                 <div class="collaborateurs">
                     <div v-for="(collabo, i) in projet.collaborateurs" :key="i" class="collaborateur">
+                        <!-- loop les collaborateurs et leurs roles -->
                         <h5>{{projet.roles[i]}}</h5>
                         <h4>{{collabo}}</h4>
                     </div>
-                </div> 
+                </div>
             </div>
         </div>
 
+        <!-- section processus si projet et processus existe -->
         <div class="section-processus" v-if="projet && projet.processus">
             <h3>processus de création</h3>
             <div class="conteneur-processus">
                 <div class="processus">
+                    <!-- texte du processus -->
                     <div class="texte-processus">{{projet.processus}}</div>
                     <div class="images-processus">
+                        <!-- loop les images du processus dans des <img> -->
                         <img v-for="(img, i) in projet.images_processus" :key="i" :src="img" alt="image-du-processus">
                     </div>
                 </div>
             </div>
         </div>
 
+        <!-- section galerie si projet et images existent -->
+        <!-- id galerie pour revenir quand on sort de la lightbox -->
         <a id="galerie"></a>
         <div class="section-galerie" v-if="projet && projet.images">
             <h3>galerie</h3>
             <div class="conteneur-galerie">
                 <div class="galerie">
+                    <!-- loop les images des projets -->
                     <a v-for="(img, i) in projet.images" :key="i" :href="'#img' + i">
                         <img :src="img" :alt="projet.title" class="galerie-img">
                     </a>
                 </div>
             </div>
 
+            <!-- lightbox prend une image apparait si clique une image -->
             <div v-for="(img, i) in projet.images" :key="'lightbox' + i" :id="'img' + i" class="lightbox">
                 <a href="#galerie" class="lightbox-close"></a>
                 <img :src="img" class="lightbox-image" :alt="projet.title">
             </div>
         </div>
 
+        <!-- section oeuvre si projet et projet video existe -->
         <div class="section-oeuvre" v-if="projet && projet.video">
             <h3>oeuvre</h3>
             <div class="conteneur-oeuvre">
                 <div class="oeuvre">
-
+                    <!-- prend la video du projet choisi -->
                     <iframe width="1000" height="600" :src="projet.video" title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -148,6 +168,7 @@
             <p>Mathieu Willett - Tous droits réservés</p>
         </footer>
     </main>
+    <!-- vue en haut de js pour que ça marche -->
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="script.js"></script>
 </body>
