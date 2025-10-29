@@ -11,7 +11,7 @@
       "./img/terminus/terminus_6.jpg"
     ],
     "link": "projet.html?proj-id=1",
-    "description": "Terminus est un court-métrage tourné entièrement avec des lentilles macro. Cette approche crée un univers visuel unique, rempli de détails et de textures. Le film raconte les conséquences dramatiques de la conduite sous l' emprise de l' alcool. Grâce à la macrophotographie, chaque image devient intense et symbolique.On ressent laconfusion, la perte de contrôle et la fragilité du moment. Terminus veut faire réfléchir sur la responsabilité et montrer à quel point un simple geste peut tout changer.",
+    "description": "Terminus est un court-métrage fait entièrement avec des lentilles macro. Nous devions faire un film macro d'environ deux minutes avec carte blanche pour le theme. Le film montre les conséquences dramatiques de la conduite sous l' emprise de l' alcool. Grâce à la macrophotographie, chaque image devient intense et intriguante. On ressent qu'à tous moments, tout peut mal se passer. Terminus veut faire réfléchir sur la responsabilité et montrer à quel point un simple geste peut tout changer. ",
     "logiciels": [
       "./img/logiciels/davinci.png",
       "./img/logiciels/reaper.png"
@@ -25,7 +25,8 @@
     "video": "https://www.youtube.com/embed/r0QNP7BkuOE?si=mcvAb3OuA2FqHqFR",
     "role": "réalisateur",
     "cours": "vidéo 2",
-    "type": "en équipe"
+    "type": "en équipe",
+    "phrase": "Terminus est un court-métrage en macrophotographie qui illustre de façon symbolique et intense les conséquences tragiques de la conduite en état d'ivresse."
   },
   {
     "id": 2,
@@ -39,7 +40,7 @@
       "./img/chasseur_de_cranes/chasseur_6.jpg"
     ],
     "link": "projet.html?proj-id=2",
-    "description": "Chasseur de Crânes est un jeu en réalité virtuelle où le joueur incarne un chevalier explorant un donjon sombre. Il doit affronter des crânes volants qui le poursuivent et vaincre le boss final pour survivre. Un deuxième joueur peut participer en modifiant le niveau de lumière des torches et la vitesse des crânes. Il peut ainsi rendre la partie plus difficile pour le chevalier et influencer directement son expérience de jeu. Cette idée crée une interaction amusante entre les deux joueurs et ajoute une dose de tension et de stratégie à chaque partie.",
+    "description": "Chasseur de Crânes est un jeu en réalité virtuelle inspiré des jeux rétro comme Duck Hunt. Le joueur incarne un chevalier explorant un donjon sombre rempli de crânes enflammés déterminés à le vaincre. Son but est de survivre et d'éliminer le boss final pour terminer le jeu. Un second joueur peut intervenir en ajustant la lumière des torches et la vitesse des crânes, rendant la partie plus difficile. Cette mécanique crée une interaction dynamique entre les deux joueurs et ajoute une tension à chaque affrontement.",
     "logiciels": [
       "./img/logiciels/unity.png",
       "./img/logiciels/vs.png",
@@ -49,11 +50,18 @@
       "Alexandre Gendron",
       "Mikael Arseneau"
     ],
-    "processus": "salut",
+    "processus": "Pour Chasseur de Crânes, l'idée nous est venue de faire un jeu de chevalier, car nous voulions créer un jeu dans le même style que Duck Hunt. Finalement, nous avons opté pour un jeu d'épée par simplicité. Nous avons rencontré plusieurs problèmes dans la scène Unity, et certains de nos scripts se sont mélangés, ce qui a causé beaucoup de bugs. Au départ, nous voulions que les crânes crachent des boules de feu, mais nous avons abandonné cette idée par manque de temps et pour simplifier le développement. Au final, je crois que nous avons réussi à faire un bon jeu malgré tous les raccourcis que nous avons pris.",
     "video": "https://www.youtube.com/embed/4QJ_51Vos0Q?si=ZqX3hF26_5ImH_1F",
     "role": "programmeur",
     "cours": "réalité mixte",
-    "type": "en équipe"
+    "type": "en équipe",
+    "phrase": "Chasseur de Crânes est un jeu en réalité virtuelle où un chevalier affronte des crânes volants dans un donjon, tandis qu'un second joueur influence sa survie en contrôlant la lumière et la difficulté du jeu.",
+    "images_processus": [
+      "./img/processus/MapProjetVr.png",
+      "./img/processus/moodboard_ennemi.jpg",
+      "./img/processus/moodboard_environnement.png",
+      "./img/processus/moodboard_epee.jpg"
+    ]
   },
   {
     "id": 3,
@@ -67,7 +75,7 @@
       "./img/fou_de_vitesse/fou_7.png"
     ],
     "link": "projet.html?proj-id=3",
-    "description": "Fou de vitesse est un jeu de course rétro en vue de dessus (top-down). Jusqu'à trois joueurs s'affrontent sur un circuit rapide et coloré. Le but est de terminer les trois tours le plus vite possible tout en ramassant un maximum de pièces. Le joueur qui combine la meilleure vitesse et le plus de pièces remporte la partie. Fou devitesse offre une expérience amusante, compétitive et accessible à tous.",
+    "description": "Fou de vitesse est un jeu de course multijoueur en 2D créé avec Phaser, inspiré des jeux rétro en vue de dessus. Jusqu'à trois joueurs s'affrontent sur un circuit rapide et coloré, où ils doivent compléter trois tours le plus vite possible tout en ramassant un maximum de pièces. Le joueur qui allie la meilleure vitesse et la plus grande collection de pièces remporte la partie. Ce projet propose une expérience dynamique, compétitive et accessible à tous.",
     "logiciels": [
       "./img/logiciels/vscode.png",
       "./img/logiciels/figma.png",
@@ -76,7 +84,8 @@
     "video": "https://itch.io/embed/3166710",
     "role": "programmeur",
     "cours": "intéractivité ludique",
-    "type": "solo"
+    "type": "solo",
+    "phrase": "Fou de vitesse est un jeu de course rétro en vue de dessus où jusqu'à trois joueurs s'affrontent pour réaliser le meilleur temps et récolter le plus de pièces sur un circuit rapide et coloré."
   },
   {
     "id": 4,
@@ -90,7 +99,7 @@
       "./img/3d/3d_6.jpg"
     ],
     "link": "projet.html?proj-id=4",
-    "description": "Prisonnier de soi-même est un court-métrage d'animation 3D qui raconte l'histoire d'une personne dans le coma. Le film montre ce qu'elle ressent à l'intérieur de sa tête : la confusion, la peur et la sensation d'être perdue. Peu à peu, on voit qu'elle se noie dans ses pensées, symbolisant sa lutte pour reprendre le contrôle ou s'échapper de son esprit. Prisonnier de soi-même est une réflexion sur la solitude et le combat intérieur.",
+    "description": "Prisonnier de soi-même est un court-métrage d'animation 3D, réalisé à partir de modèles et de décors que j'ai créés et pris en ligne, puis animés à l'aide de mouvements trouvés sur le web. Le montage final a été réalisé dans DaVinci Resolve. Le film raconte l'histoire d'une personne plongée dans le coma, prisonnière de ses pensées et de ses peurs. À travers une mise en scène symbolique, il montre la confusion, la solitude et la lutte intérieure pour retrouver le contrôle ou s'échapper de son propre esprit.",
     "logiciels": [
       "./img/logiciels/maya.png",
       "./img/logiciels/davinci.png",
@@ -99,7 +108,8 @@
     "video": "https://www.youtube.com/embed/vqFKLkE7WQo?si=tLFGkQz_9TzN1NkW",
     "role": "animateur",
     "cours": "animation 3D",
-    "type": "solo"
+    "type": "solo",
+    "phrase": "Prisonnier de soi-même est un court-métrage d'animation 3D qui explore le combat intérieur d'une personne plongée dans le coma, prisonnière de ses pensées et de sa propre conscience."
   },
   {
     "id": 5,
@@ -113,7 +123,7 @@
       "./img/paysage/paysage_6.jpg"
     ],
     "link": "projet.html?proj-id=5",
-    "description": "Paysage est un projet multimédia interactif qui mélange sons et images. L'utilisateur peut contrôler l'environnement visuel et sonore grâce à des claviers MIDI, au mouvement et à la voix. Cela crée une expérience où chaque action influence directement ce qui se passe à l'écran. La vidéo utilise des scènes de mon projet d'animation 3D Prisonnier de soi-même, réutilisées pour créer une version plus abstraite et artistique. Le but est d'offrir une expérience immersive où le spectateur explore un monde visuel et sonore en constante évolution.",
+    "description": "Paysage est un projet multimédia interactif réalisé avec TouchDesigner, combinant vidéo, animation 3D et un paysage audio  créé sur Max. J'ai créé plusieurs scènes visuelles intégrant mes propres effets et animations, tandis que la partie sonore a été conçue sur Max et Reaper. Le tout est contrôlé à l'aide de claviers MIDI Nanokontrol, permettant à l'utilisateur d'influencer en temps réel l'environnement visuel et sonore. Inspiré de mon court-métrage Prisonnier de soi-même, Paysage propose une expérience immersive et évolutive où chaque action façonne un monde sensoriel unique.",
     "logiciels": [
       "./img/logiciels/maya.png",
       "./img/logiciels/touch.png",
@@ -122,6 +132,7 @@
     "video": "https://www.youtube.com/embed/4QJ_51Vos0Q?si=ZqX3hF26_5ImH_1F",
     "role": "créateur",
     "cours": "traitement audiovisuel & audio 2",
-    "type": "solo"
+    "type": "solo",
+    "phrase": "Paysage est un projet multimédia interactif où sons et images réagissent aux gestes, à la voix et aux claviers MIDI, offrant une expérience immersive et évolutive inspirée de l'univers visuel de Prisonnier de soi-même."
   }
 ]

@@ -30,7 +30,6 @@
     verif w3c
     commenter le code
     mettre site en ligne
-    processus de creation
      -->
 
     <main class="appli-vue">
@@ -40,10 +39,10 @@
                 <div class="col-12 mb-5 imageCarrousel">
                     <transition name="fade" mode="out-in">
                         <img v-if="selectedProject.images" :key="selectedProject.images[0]"
-                            :src="selectedProject.images[0]" alt="carrousel" class="carrousel-image"/>
+                            :src="selectedProject.images[0]" alt="carrousel" class="carrousel-image" />
                     </transition>
-                    <img id="flecheG" src="./img/fleche.png" @click="changeSelectedProject('back')" alt="back"/>
-                    <img id="flecheD" src="./img/fleche.png" @click="changeSelectedProject('next')" alt="next"/>
+                    <img id="flecheG" src="./img/fleche.png" @click="changeSelectedProject('back')" alt="back" />
+                    <img id="flecheD" src="./img/fleche.png" @click="changeSelectedProject('next')" alt="next" />
                 </div>
             </div>
 
@@ -144,14 +143,14 @@
                         <h4>Mathieu Willett</h4>
                         <p>
                             Salut ! Je m'appelle Mathieu et je suis finissant en Techniques d'intégration multimédia.
-                            J'aime créer des projets qui combinent technologie et créativité, surtout dans les
-                            installations interactives et le web. Je m'intéresse à la façon dont les gens peuvent
+                            J'aime créer des projets qui combinent technologie et créativité, majoritairement dans les
+                            installations interactives et le web. J'aime quand les gens peuvent
                             interagir avec ce qu'ils voient et
                             entendent, et j'aime expérimenter avec différents outils pour rendre mes projets vivants et
                             immersifs.
                         </p>
                         <p>ekiwillow@gmail.com</p>
-                        <p>lien linkedin</p>
+                        <p>Laval</p>
                     </div>
                     <div class="moi">
                         <img src="./img/moi2.jpg">

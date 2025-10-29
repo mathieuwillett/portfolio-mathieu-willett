@@ -376,14 +376,25 @@ footer {
 
 .titre_projet {
     width: 80vw;
-    height: 10vh;
+    height: 20vh;
     background-color: #8A8D93;
     border: 0.2rem solid;
     border-color: #f7f0f0 #1d1d1d #1d1d1d #f7f0f0;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     transform: translateY(-4rem);
+}
+
+.titre_projet h2 {
+    padding-top: 2rem;
+}
+
+.titre_projet p {
+    padding: 2rem;
+    font-weight: 500;
+
 }
 
 .titre-section {
@@ -480,7 +491,27 @@ footer {
     border: 0.2rem solid;
     border-color: #f7f0f0 #1d1d1d #1d1d1d #f7f0f0;
     margin-bottom: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+.texte-processus {
+    width: 70vw;
+    padding: 2rem;
+    font-weight: 500;
+}
+
+.images-processus {
+    width: 70vw;
+    height: 35vh;
+    padding: 2rem;
+}
+
+  .images-processus img {
+        width: 15vw;
+        padding: 1rem;
+    }
 
 .galerie {
     display: grid;
@@ -640,6 +671,7 @@ footer {
 
     .processus {
         width: 90vw;
+        height: 70vh
     }
 
     .galerie {
@@ -665,12 +697,32 @@ footer {
     }
 }
 
-@media screen and (max-width: 700px) {
-    .bio p {
+@media screen and (max-width: 850px) {
+    .texte-processus {
         font-size: 0.8rem;
+        width: 90vw;
+    }
+
+    .images-processus {
+        width: 90vw;
+    }
+
+    .images-processus img {
+        width: 25vw;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    .bio p {
+        font-size: 0.9rem;
     }
 
     .description p {
-        font-size: 1rem;
+        font-size: 0.8rem;
+    }
+
+    .titre_projet {
+        height: 50vh;
     }
 }

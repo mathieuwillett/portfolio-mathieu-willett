@@ -34,6 +34,7 @@
             <div class="conteneur-titre">
                 <div class="titre_projet">
                     <h2>{{projet.title}}</h2>
+                    <p>{{projet.phrase}}</p>
                 </div>
             </div>
         </div>
@@ -84,10 +85,14 @@
             <h3>processus de création</h3>
             <div class="conteneur-processus">
                 <div class="processus">
-
+                    <div class="texte-processus">{{ projet.processus }}</div>
+                    <div class="images-processus">
+                        <img v-for="(img, i) in projet.images_processus" :key="i" :src="img" alt="image du processus">
+                    </div>
                 </div>
             </div>
         </div>
+
         <a id="galerie"></a>
         <div class="section-galerie" v-if="projet && projet.images">
             <h3>galerie</h3>
