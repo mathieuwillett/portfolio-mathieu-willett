@@ -1,8 +1,10 @@
+/* importer font */
 @font-face {
     font-family: satoshi;
     src: url(./font/Satoshi-Variable.ttf);
 }
 
+/* j'ai tout mis dans le * parce que sinon ça marche pas */
 * {
     box-sizing: border-box;
     margin: 0%;
@@ -12,6 +14,7 @@
     text-decoration: none !important;
 }
 
+/* css du header */
 header {
     background-color: #8A8D93;
     width: 100%;
@@ -23,12 +26,14 @@ header {
 
 }
 
+/* css du mot portfolio du logo */
 header h1 {
     color: #1d1d1d;
     margin-left: 10vw;
     font-size: 4rem;
 }
 
+/* css de mon nom du logo */
 header h2 {
     color: #1d1d1d;
     text-align: right;
@@ -36,11 +41,13 @@ header h2 {
     transform: translateX(4vw);
 }
 
+/* overflow-x sur main parce que sinon ça marche pas */
 main {
     background-color: #c1c1c1;
     overflow-x: hidden;
 }
 
+/* le div qui englobe l'image du carrousel */
 .imageCarrousel {
     position: relative;
     width: 100%;
@@ -50,6 +57,7 @@ main {
     margin: 0;
 }
 
+/* img du carrousel, inset pour que les fleches soit au dessus de l'image */
 .carrousel-image {
     position: absolute;
     inset: 0;
@@ -61,6 +69,7 @@ main {
     margin: 0;
 }
 
+/* animation du carrousel */
 .fade-enter-active,
 .fade-leave-active {
     transition: opacity 0.3s ease;
@@ -71,6 +80,7 @@ main {
     opacity: 0;
 }
 
+/* css de la fleche de gauche */
 #flecheG {
     position: absolute;
     width: 6rem;
@@ -81,10 +91,12 @@ main {
     transform: translateY(-50%);
 }
 
+/* quand hover fleche gauche, plus clair */
 #flecheG:hover {
     filter: brightness(130%);
 }
 
+/* css de la fleche de droite */
 #flecheD {
     position: absolute;
     width: 6rem;
@@ -95,10 +107,12 @@ main {
     z-index: 10;
 }
 
+/* quand hover fleche droite, plus clair  */
 #flecheD:hover {
     filter: brightness(130%);
 }
 
+/* css de la div du titre par dessus le carrousel */
 .titre {
     position: relative;
     background-color: #919ea5;
@@ -113,16 +127,19 @@ main {
     align-items: center;
 }
 
+/* quand hover titre, plus clair */
 .titre:hover {
     filter: brightness(130%);
 }
 
+/* css du texte de la div titre */
 .titre h2 {
     text-align: center;
     margin: auto;
     color: #1d1d1d;
 }
 
+/* css de la section des apps */
 .apps {
     background-color: #8A8D93;
     width: 100vw;
@@ -137,23 +154,29 @@ main {
     position: relative;
 }
 
+/* css des logos */
 .logos {
     display: flex;
     align-items: center;
     gap: 2rem;
+    /* animation continue */
     animation: scroll 20s linear infinite;
+    /* quand pas hover, l'animation est en pause */
     animation-play-state: paused;
 }
 
+/* quand hover sur apps, l'animation des logos se lance  */
 .apps:hover .logos {
     animation-play-state: running;
 }
 
+/* css des images des logos */
 .logiciel {
     width: 8rem;
     flex-shrink: 0;
 }
 
+/* animation des logos */
 @keyframes scroll {
     from {
         transform: translateX(0);
@@ -164,16 +187,19 @@ main {
     }
 }
 
+/* si c'est davinci (ou max), image en noir et blanc */
 .davinci {
     filter: grayscale(100%);
 }
 
+/* tous les titres de sections de index.html */
 main h3 {
     text-align: center;
     margin-bottom: 4rem;
     font-size: 3rem;
 }
 
+/* conteneur des projets */
 .groupe {
     display: flex;
     flex-direction: column;
@@ -181,6 +207,7 @@ main h3 {
     margin-bottom: 20vh;
 }
 
+/* grille des projets */
 .projets {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -188,6 +215,7 @@ main h3 {
     gap: 2rem;
 }
 
+/* css de chaque projet */
 .projet {
     width: 48rem;
     height: 27rem;
@@ -195,16 +223,19 @@ main h3 {
     border-color: #f7f0f0 #1d1d1d #1d1d1d #f7f0f0;
 }
 
+/* css des image des projets  */
 .projet img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
+/* taille de la case terminus de la grid */
 .terminus {
     grid-column: span 2 / span 2;
 }
 
+/* div de titre de terminus */
 .terminus div {
     width: 40rem;
     height: 5rem;
@@ -221,11 +252,13 @@ main h3 {
     align-items: center;
 }
 
+/* taille de la case chasseur de la grid */
 .chasseur {
     grid-column: span 2 / span 2;
     grid-column-start: 3;
 }
 
+/* div de titre de chasseur */
 .chasseur div {
     width: 40rem;
     height: 5rem;
@@ -242,11 +275,13 @@ main h3 {
     font-weight: 500;
 }
 
+/* taille de la case fou de la grid */
 .fou {
     grid-column: span 2 / span 2;
     grid-row-start: 2;
 }
 
+/* div de titre de fou */
 .fou div {
     width: 40rem;
     height: 5rem;
@@ -263,12 +298,14 @@ main h3 {
     font-weight: 500;
 }
 
+/* taille de la case troisd de la grid */
 .troisd {
     grid-column: span 2 / span 2;
     grid-column-start: 3;
     grid-row-start: 2;
 }
 
+/* div de titre de troisd */
 .troisd div {
     width: 40rem;
     height: 5rem;
@@ -285,12 +322,14 @@ main h3 {
     font-weight: 500;
 }
 
+/* taille de la case paysage de la grid */
 .paysage {
     grid-column: span 2 / span 2;
     grid-column-start: 2;
     grid-row-start: 3;
 }
 
+/* div de titre de paysage */
 .paysage div {
     width: 40rem;
     height: 5rem;
@@ -307,15 +346,18 @@ main h3 {
     font-weight: 500;
 }
 
+/* quand hover projet, plus clair */
 .projet:hover {
     filter: brightness(130%);
 }
 
+/* conteneur à propos */
 .propos {
     display: flex;
     justify-content: center;
 }
 
+/* section biographie */
 .bio {
     background-color: #8A8D93;
     width: 70vw;
@@ -326,6 +368,7 @@ main h3 {
     margin-bottom: 20vh;
 }
 
+/* titre de bio */
 .bio h4 {
     width: 40vw;
     text-align: center;
@@ -333,23 +376,27 @@ main h3 {
     padding: 1rem;
 }
 
+/* texte de bio */
 .bio p {
     width: 40vw;
     font-size: 1.5rem;
     padding: 1rem;
 }
 
+/* div de ma photo */
 .moi {
     width: 30vw;
     height: 70vh;
 }
 
+/* img de ma photo  */
 .moi img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
+/* css du footer */
 footer {
     padding: 1rem;
     text-align: center;
@@ -358,22 +405,28 @@ footer {
     font-size: 1.3rem;
 }
 
+/* séparation entre index.html et projet.html */
+
+/* div du hero */
 .hero {
     width: 100vw;
     height: 90vh;
 }
 
+/* image du hero */
 .hero img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
+/* conteneur du titre */
 .conteneur-titre {
     display: flex;
     justify-content: center;
 }
 
+/* div du titre du projet */
 .titre_projet {
     width: 80vw;
     height: 20vh;
@@ -387,25 +440,29 @@ footer {
     transform: translateY(-4rem);
 }
 
+/* titre du projet */
 .titre_projet h2 {
     padding-top: 2rem;
 }
 
+/* courte description du projet */
 .titre_projet p {
     padding: 2rem;
     font-weight: 500;
-
 }
 
+/* section du titre  */
 .titre-section {
     margin-top: 20vh;
 }
 
+/* conteneur description */
 .conteneur-description {
     display: flex;
     justify-content: center;
 }
 
+/* div de la description  */
 .description {
     width: 32.5vw;
     height: 50vh;
@@ -417,6 +474,7 @@ footer {
     margin-right: 5vw;
 }
 
+/* div des technologies utilisées  */
 .used {
     width: 32.5vw;
     height: 50vh;
@@ -428,23 +486,19 @@ footer {
     align-items: center;
 }
 
-.used div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
+/* texte de la description  */
 .description p {
     font-weight: 400;
     font-size: 1.2rem;
 }
 
+/* conteneur specs */
 .conteneur-specs {
     display: flex;
     justify-content: center;
 }
 
+/* div des specs */
 .specs {
     width: 70vw;
     height: 30vh;
@@ -457,11 +511,13 @@ footer {
     align-items: center;
 }
 
+/* conteneur des collaborateurs */
 .conteneur-collaborateurs {
     display: flex;
     justify-content: center;
 }
 
+/* div des collaborateurs */
 .collaborateurs {
     background-color: #8A8D93;
     width: 70vw;
@@ -474,16 +530,19 @@ footer {
     border-color: #f7f0f0 #1d1d1d #1d1d1d #f7f0f0;
 }
 
+/* conteneur de la galerie */
 .conteneur-galerie {
     display: flex;
     justify-content: center;
 }
 
+/* conteneur du processus */
 .conteneur-processus {
     display: flex;
     justify-content: center;
 }
 
+/* div du processus */
 .processus {
     width: 70vw;
     height: 70vh;
@@ -496,23 +555,27 @@ footer {
     align-items: center;
 }
 
+/* texte du processus */
 .texte-processus {
     width: 70vw;
     padding: 2rem;
     font-weight: 500;
 }
 
+/* div des images du processus */
 .images-processus {
     width: 70vw;
     height: 35vh;
     padding: 2rem;
 }
 
-  .images-processus img {
-        width: 15vw;
-        padding: 1rem;
-    }
+/* images du processus */
+.images-processus img {
+    width: 15vw;
+    padding: 1rem;
+}
 
+/* grille de la galerie */
 .galerie {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -521,6 +584,7 @@ footer {
     margin-bottom: 20vh;
 }
 
+/* ccs des images de la galerie */
 .galerie img {
     width: 40rem;
     height: 24rem;
@@ -528,16 +592,19 @@ footer {
     border-color: #f7f0f0 #1d1d1d #1d1d1d #f7f0f0;
 }
 
+/* classe pour le curseur pointer et l'effet hover des images de la galerie */
 .galerie-img {
     cursor: pointer;
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
+/* quand hover galerie img, plus clair et un peu transparent */
 .galerie-img:hover {
     filter: brightness(130%);
     opacity: 0.8;
 }
 
+/* css de la lightbox */
 .lightbox {
     position: fixed;
     top: 0;
@@ -551,10 +618,12 @@ footer {
     z-index: 2000;
 }
 
+/* créer lightbox sans js */
 .lightbox:target {
     display: flex;
 }
 
+/* image de la lightbox */
 .lightbox-image {
     max-width: 90%;
     max-height: 90%;
@@ -563,6 +632,7 @@ footer {
     cursor: zoom-out;
 }
 
+/* lightbox quand elle est fermée */
 .lightbox-close {
     position: absolute;
     width: 100%;
@@ -571,15 +641,18 @@ footer {
     left: 0;
 }
 
+/* empêcher le scroll quand lightbox ouverte */
 :target {
     overflow: hidden;
 }
 
+/* conteneur de l'oeuvre */
 .conteneur-oeuvre {
     display: flex;
     justify-content: center;
 }
 
+/* div de l'oeuvre */
 .oeuvre {
     width: 70vw;
     height: 70vh;
@@ -592,6 +665,7 @@ footer {
     align-items: center;
 }
 
+/* responsive */
 @media screen and (max-width: 1577px) {
     #flecheG {
         width: 3rem;
@@ -603,6 +677,7 @@ footer {
         height: 3rem;
     }
 
+    /* quand petit écran, l'animation des logos est plus rapide et joue tout le temps */
     .logos {
         display: flex;
         align-items: center;
@@ -611,6 +686,7 @@ footer {
         animation-play-state: running;
     }
 
+    /* quand petit écran, les projets en colonne */
     .projets {
         display: flex;
         flex-direction: column;
@@ -674,6 +750,7 @@ footer {
         height: 70vh
     }
 
+    /* quand petit écran, les images de la galerie en colonne */
     .galerie {
         display: flex;
         flex-direction: column;
@@ -697,6 +774,7 @@ footer {
     }
 }
 
+/* quand ecran tres petit */
 @media screen and (max-width: 850px) {
     .texte-processus {
         font-size: 0.8rem;
@@ -715,7 +793,7 @@ footer {
 @media screen and (max-width: 700px) {
 
     .bio p {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 
     .description p {

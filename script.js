@@ -182,6 +182,3 @@ const appli = Vue.createApp({
 });
 
 const vm = appli.mount('.appli-vue');
-
-
-
