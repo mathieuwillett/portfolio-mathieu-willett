@@ -63,7 +63,9 @@
                     <p>{{projet.description}}</p>
                 </div>
                 <div class="used">
-                    <img v-for="logiciel in projet.logiciels" :key="logiciel" class="logiciel" :src="logiciel" :class="{'davinci': logiciel.includes('davinci'),'max': logiciel.includes('max')}" alt="images-logiciel-utilisés">
+                    <img v-for="logiciel in projet.logiciels" :key="logiciel" class="logiciel" :src="logiciel"
+                        :class="{'davinci': logiciel.includes('davinci'),'max': logiciel.includes('max')}"
+                        alt="images-logiciel-utilisés">
                 </div>
             </div>
         </div>
@@ -88,12 +90,15 @@
             </div>
         </div>
 
-        <div class="section-collaborateurs" v-if="projet && projet.collaborateurs">
+        <div class="section-collaborateurs" v-if="projet && projet.collaborateurs && projet.roles">
             <h3>collaborateurs</h3>
             <div class="conteneur-collaborateurs">
                 <div class="collaborateurs">
-                    <h4 v-for="collabo in projet.collaborateurs" :key="collabo">{{collabo}}</h4>
-                </div>
+                    <div v-for="(collabo, i) in projet.collaborateurs" :key="i" class="collaborateur">
+                        <h5>{{projet.roles[i]}}</h5>
+                        <h4>{{collabo}}</h4>
+                    </div>
+                </div> 
             </div>
         </div>
 
@@ -101,7 +106,7 @@
             <h3>processus de création</h3>
             <div class="conteneur-processus">
                 <div class="processus">
-                    <div class="texte-processus">{{ projet.processus }}</div>
+                    <div class="texte-processus">{{projet.processus}}</div>
                     <div class="images-processus">
                         <img v-for="(img, i) in projet.images_processus" :key="i" :src="img" alt="image-du-processus">
                     </div>

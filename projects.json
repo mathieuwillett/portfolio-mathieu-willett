@@ -16,6 +16,12 @@
       "./img/logiciels/davinci.png",
       "./img/logiciels/reaper.png"
     ],
+    "roles": [
+      "directeur lumière",
+      "directeur photo",
+      "acteur",
+      "cadreuse"
+    ],
     "collaborateurs": [
       "Alexandre Gendron",
       "Mikael Arseneau",
@@ -45,6 +51,10 @@
       "./img/logiciels/unity.png",
       "./img/logiciels/vs.png",
       "./img/logiciels/touch.png"
+    ],
+    "roles": [
+      "modélisateur",
+      "level design"
     ],
     "collaborateurs": [
       "Alexandre Gendron",
