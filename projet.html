@@ -5,10 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>portfolio - mathieu willett</title>
+    <meta name="description"
+        content="Portfolio de Mathieu Willett, créateur multimédia spécialisé en intégration, web et installations interactives. Découvrez ses projets et compétences.">
+    <meta name="author" content="Mathieu Willett">
+    <meta name="robots" content="index, follow">
+    <meta name="keywords"
+        content="Mathieu Willett, portfolio, intégration multimédia, web, interactif, design, projets, programmation, art numérique, TIM">
+    <meta property="og:title" content="Portfolio - Mathieu Willett">
+    <meta property="og:description"
+        content="Découvrez les projets interactifs, web et audiovisuels de Mathieu Willett, créateur multimédia.">
+    <meta property="og:image" content="https://ton-domaine.com/img/moi2.jpg">
+    <meta property="og:url" content="https://ton-domaine.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="fr_FR">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Portfolio - Mathieu Willett">
+    <meta name="twitter:description" content="Portfolio de Mathieu Willett — projets interactifs, web et multimédias.">
+    <meta name="twitter:image" content="https://ton-domaine.com/img/moi2.jpg">
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
 </head>
@@ -28,7 +45,7 @@
 
         <div class="section-hero" v-if="projet && projet.images && projet.images.length">
             <div class="hero">
-                <img :src="projet.images[0]">
+                <img :src="projet.images[0]" :alt="projet.title">
             </div>
 
             <div class="conteneur-titre">
@@ -46,8 +63,7 @@
                     <p>{{projet.description}}</p>
                 </div>
                 <div class="used">
-                    <img v-for="logiciel in projet.logiciels" :key="logiciel" class="logiciel" :src="logiciel"
-                        :class="{'davinci': logiciel.includes('davinci'),'max': logiciel.includes('max')}">
+                    <img v-for="logiciel in projet.logiciels" :key="logiciel" class="logiciel" :src="logiciel" :class="{'davinci': logiciel.includes('davinci'),'max': logiciel.includes('max')}" alt="images-logiciel-utilisés">
                 </div>
             </div>
         </div>
@@ -87,7 +103,7 @@
                 <div class="processus">
                     <div class="texte-processus">{{ projet.processus }}</div>
                     <div class="images-processus">
-                        <img v-for="(img, i) in projet.images_processus" :key="i" :src="img" alt="image du processus">
+                        <img v-for="(img, i) in projet.images_processus" :key="i" :src="img" alt="image-du-processus">
                     </div>
                 </div>
             </div>

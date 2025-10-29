@@ -5,10 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>portfolio - mathieu willett</title>
+    <meta name="description"
+        content="Portfolio de Mathieu Willett, créateur multimédia spécialisé en intégration, web et installations interactives. Découvrez ses projets et compétences.">
+    <meta name="author" content="Mathieu Willett">
+    <meta name="robots" content="index, follow">
+    <meta name="keywords"
+        content="Mathieu Willett, portfolio, intégration multimédia, web, interactif, design, projets, programmation, art numérique, TIM">
+    <meta property="og:title" content="Portfolio - Mathieu Willett">
+    <meta property="og:description"
+        content="Découvrez les projets interactifs, web et audiovisuels de Mathieu Willett, créateur multimédia.">
+    <meta property="og:image" content="https://ton-domaine.com/img/moi2.jpg">
+    <meta property="og:url" content="https://ton-domaine.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="fr_FR">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Portfolio - Mathieu Willett">
+    <meta name="twitter:description" content="Portfolio de Mathieu Willett — projets interactifs, web et multimédias.">
+    <meta name="twitter:image" content="https://ton-domaine.com/img/moi2.jpg">
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
 </head>
@@ -24,14 +41,6 @@
         </a>
     </header>
 
-    <!-- 
-    !! À FAIRE !!
-    alt et meta
-    verif w3c
-    commenter le code
-    mettre site en ligne
-     -->
-
     <main class="appli-vue">
 
         <div class="section-carrousel">
@@ -39,13 +48,14 @@
                 <div class="col-12 mb-5 imageCarrousel">
                     <transition name="fade" mode="out-in">
                         <img v-if="selectedProject.images" :key="selectedProject.images[0]"
-                            :src="selectedProject.images[0]" alt="carrousel" class="carrousel-image" />
+                            :src="selectedProject.images[0]" alt="image-carrousel" class="carrousel-image" />
                     </transition>
-                    <img id="flecheG" src="./img/fleche.png" @click="changeSelectedProject('back')" alt="back" />
-                    <img id="flecheD" src="./img/fleche.png" @click="changeSelectedProject('next')" alt="next" />
+                    <img id="flecheG" src="./img/fleche.png" @click="changeSelectedProject('back')"
+                        alt="flèche précédente" />
+                    <img id="flecheD" src="./img/fleche.png" @click="changeSelectedProject('next')"
+                        alt="flèche suivante" />
                 </div>
             </div>
-
 
             <a class="offset-xxl-1 col-xxl-3 col-xl-12 titre" :href="selectedProject.link">
                 <div>
@@ -58,41 +68,41 @@
             <h3>compétences</h3>
             <div class="apps">
                 <div class="logos">
-                    <img class="logiciel" src="./img/logiciels/html.png">
-                    <img class="logiciel" src="./img/logiciels/css.png">
-                    <img class="logiciel" src="./img/logiciels/js.png">
-                    <img class="logiciel" src="./img/logiciels/csharp.png">
-                    <img class="logiciel" src="./img/logiciels/c++.png">
-                    <img class="logiciel" src="./img/logiciels/github.png">
-                    <img class="logiciel davinci" src="./img/logiciels/davinci.png">
-                    <img class="logiciel" src="./img/logiciels/vscode.png">
-                    <img class="logiciel" src="./img/logiciels/figma.png">
-                    <img class="logiciel" src="./img/logiciels/reaper.png">
-                    <img class="logiciel" src="./img/logiciels/maya.png">
-                    <img class="logiciel" src="./img/logiciels/unity.png">
-                    <img class="logiciel" src="./img/logiciels/touch.png">
-                    <img class="logiciel" src="./img/logiciels/pd.png">
-                    <img class="logiciel" src="./img/logiciels/platformio.png">
-                    <img class="logiciel" src="./img/logiciels/vs.png">
-                    <img class="logiciel davinci" src="./img/logiciels/max.png">
+                    <img class="logiciel" src="./img/logiciels/html.png" alt="logo-html">
+                    <img class="logiciel" src="./img/logiciels/css.png" alt="logo-css">
+                    <img class="logiciel" src="./img/logiciels/js.png" alt="logo-javaScript">
+                    <img class="logiciel" src="./img/logiciels/csharp.png" alt="logo-C#">
+                    <img class="logiciel" src="./img/logiciels/c++.png" alt="logo-C++">
+                    <img class="logiciel" src="./img/logiciels/github.png" alt="logo-github">
+                    <img class="logiciel davinci" src="./img/logiciels/davinci.png" alt="logo-davinci">
+                    <img class="logiciel" src="./img/logiciels/vscode.png" alt="logo-visual-studio-code">
+                    <img class="logiciel" src="./img/logiciels/figma.png" alt="logo-figma">
+                    <img class="logiciel" src="./img/logiciels/reaper.png" alt="logo-reaper">
+                    <img class="logiciel" src="./img/logiciels/maya.png" alt="logo-maya">
+                    <img class="logiciel" src="./img/logiciels/unity.png" alt="logo-unity">
+                    <img class="logiciel" src="./img/logiciels/touch.png" alt="logo-touchdesigner">
+                    <img class="logiciel" src="./img/logiciels/pd.png" alt="logo-pure-data">
+                    <img class="logiciel" src="./img/logiciels/platformio.png" alt="logo-platformio">
+                    <img class="logiciel" src="./img/logiciels/vs.png" alt="logo-visual-studio">
+                    <img class="logiciel davinci" src="./img/logiciels/max.png" alt="logo-max">
 
-                    <img class="logiciel" src="./img/logiciels/html.png">
-                    <img class="logiciel" src="./img/logiciels/css.png">
-                    <img class="logiciel" src="./img/logiciels/js.png">
-                    <img class="logiciel" src="./img/logiciels/csharp.png">
-                    <img class="logiciel" src="./img/logiciels/c++.png">
-                    <img class="logiciel" src="./img/logiciels/github.png">
-                    <img class="logiciel davinci" src="./img/logiciels/davinci.png">
-                    <img class="logiciel" src="./img/logiciels/vscode.png">
-                    <img class="logiciel" src="./img/logiciels/figma.png">
-                    <img class="logiciel" src="./img/logiciels/reaper.png">
-                    <img class="logiciel" src="./img/logiciels/maya.png">
-                    <img class="logiciel" src="./img/logiciels/unity.png">
-                    <img class="logiciel" src="./img/logiciels/touch.png">
-                    <img class="logiciel" src="./img/logiciels/pd.png">
-                    <img class="logiciel" src="./img/logiciels/platformio.png">
-                    <img class="logiciel" src="./img/logiciels/vs.png">
-                    <img class="logiciel davinci" src="./img/logiciels/max.png">
+                    <img class="logiciel" src="./img/logiciels/html.png" alt="logo-html">
+                    <img class="logiciel" src="./img/logiciels/css.png" alt="logo-css">
+                    <img class="logiciel" src="./img/logiciels/js.png" alt="logo-javaScript">
+                    <img class="logiciel" src="./img/logiciels/csharp.png" alt="logo-C#">
+                    <img class="logiciel" src="./img/logiciels/c++.png" alt="logo-C++">
+                    <img class="logiciel" src="./img/logiciels/github.png" alt="logo-github">
+                    <img class="logiciel davinci" src="./img/logiciels/davinci.png" alt="logo-davinci">
+                    <img class="logiciel" src="./img/logiciels/vscode.png" alt="logo-visual-studio-code">
+                    <img class="logiciel" src="./img/logiciels/figma.png" alt="logo-figma">
+                    <img class="logiciel" src="./img/logiciels/reaper.png" alt="logo-reaper">
+                    <img class="logiciel" src="./img/logiciels/maya.png" alt="logo-maya">
+                    <img class="logiciel" src="./img/logiciels/unity.png" alt="logo-unity">
+                    <img class="logiciel" src="./img/logiciels/touch.png" alt="logo-touchdesigner">
+                    <img class="logiciel" src="./img/logiciels/pd.png" alt="logo-pure-data">
+                    <img class="logiciel" src="./img/logiciels/platformio.png" alt="logo-platformio">
+                    <img class="logiciel" src="./img/logiciels/vs.png" alt="logo-visual-studio">
+                    <img class="logiciel davinci" src="./img/logiciels/max.png" alt="logo-max">
                 </div>
             </div>
         </div>
@@ -103,31 +113,31 @@
                 <div class="projets">
                     <div class="projet terminus">
                         <a href="projet.html?proj-id=1">
-                            <img src="./img/terminus/terminus_1.png">
+                            <img src="./img/terminus/terminus_1.png" alt="aperçu-terminus">
                             <div>terminus</div>
                         </a>
                     </div>
                     <div class="projet chasseur">
                         <a href="projet.html?proj-id=2">
-                            <img src="./img/chasseur_de_cranes/chasseur_1.jpg">
+                            <img src="./img/chasseur_de_cranes/chasseur_1.jpg" alt="aperçu-chasseur-de-crânes">
                             <div>chasseur de crânes</div>
                         </a>
                     </div>
                     <div class="projet fou">
                         <a href="projet.html?proj-id=3">
-                            <img src="./img/fou_de_vitesse/fou_1.png">
+                            <img src="./img/fou_de_vitesse/fou_1.png" alt="aperçu-fou-de-vitesse">
                             <div>fou de vitesse</div>
                         </a>
                     </div>
                     <div class="projet troisd">
                         <a href="projet.html?proj-id=4">
-                            <img src="./img/3d/3d_4.jpg">
+                            <img src="./img/3d/3d_4.jpg" alt="aperçu-prisonnier-de-soi-même">
                             <div>prisonnier de soi-même</div>
                         </a>
                     </div>
                     <div class="projet paysage">
                         <a href="projet.html?proj-id=5">
-                            <img src="./img/paysage/paysage intro.jpg">
+                            <img src="./img/paysage/paysage intro.jpg" alt="aperçu-paysage">
                             <div>paysage</div>
                         </a>
                     </div>
@@ -153,7 +163,7 @@
                         <p>Laval</p>
                     </div>
                     <div class="moi">
-                        <img src="./img/moi2.jpg">
+                        <img src="./img/moi2.jpg" alt="photo de Mathieu Willett">
                     </div>
                 </div>
             </div>
