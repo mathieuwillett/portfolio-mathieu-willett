@@ -665,6 +665,15 @@ footer {
     align-items: center;
 }
 
+iframe {
+    width: 90%;
+    height: 90%;
+}
+
+.figma {
+    height: 70%
+}
+
 /* responsive */
 @media screen and (max-width: 1577px) {
     #flecheG {
