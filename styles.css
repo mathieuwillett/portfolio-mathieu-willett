@@ -14,6 +14,10 @@
     text-decoration: none !important;
 }
 
+a {
+    color:#1d1d1d !important;
+}
+
 /* css du header */
 header {
     background-color: #8A8D93;
@@ -23,22 +27,24 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    padding: 1rem;
 }
 
 /* css du mot portfolio du logo */
 header h1 {
     color: #1d1d1d;
     margin-left: 10vw;
-    font-size: 4rem;
+    font-size: auto;
+    /* padding-top: 5vh; */
 }
 
 /* css de mon nom du logo */
 header h2 {
     color: #1d1d1d;
     text-align: right;
-    font-size: 2em;
-    transform: translateX(4vw);
+    font-size: auto;
+    margin-left: 10vw;
+    /* padding-bottom: 5vh; */
 }
 
 /* overflow-x sur main parce que sinon ça marche pas */
@@ -379,8 +385,14 @@ main h3 {
 /* texte de bio */
 .bio p {
     width: 40vw;
-    font-size: 1.5rem;
+    font-size: 1.2vw;
     padding: 1rem;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+span {
+    font-weight: 600;
 }
 
 /* div de ma photo */
@@ -394,6 +406,7 @@ main h3 {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    inset: 0;
 }
 
 /* css du footer */
@@ -507,8 +520,15 @@ footer {
     border-color: #f7f0f0 #1d1d1d #1d1d1d #f7f0f0;
     margin-bottom: 20vh;
     display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+}
+
+.flex_specs {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 /* conteneur des collaborateurs */
@@ -529,6 +549,13 @@ footer {
     border: 0.2rem solid;
     border-color: #f7f0f0 #1d1d1d #1d1d1d #f7f0f0;
 }
+
+.flex_collabo {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
 
 /* conteneur de la galerie */
 .conteneur-galerie {
@@ -567,12 +594,14 @@ footer {
     width: 70vw;
     height: 35vh;
     padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* images du processus */
 .images-processus img {
     width: 15vw;
-    padding: 1rem;
 }
 
 /* grille de la galerie */
@@ -674,6 +703,29 @@ iframe {
     height: 70%
 }
 
+.conteneur-retour {
+    display: flex;
+    justify-content: center;
+}
+
+.retour {
+    width: 20vw;
+    height: 10vh;
+    background-color: #919ea5;
+    border: 0.2rem solid;
+    border-color: #f7f0f0 #1d1d1d #1d1d1d #f7f0f0;
+    margin-bottom: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3vw;
+    color:#1d1d1d;
+}
+
+.retour:hover {
+    filter: brightness(130%);
+}
+
 /* responsive */
 @media screen and (max-width: 1577px) {
     #flecheG {
@@ -718,7 +770,11 @@ iframe {
 
     .bio p {
         width: 50vw;
-        font-size: 1.2rem;
+        font-size: auto;
+    }
+
+    .bio h4 {
+        width: 100%;
     }
 
     .moi {
@@ -727,6 +783,7 @@ iframe {
 
     .titre_projet {
         width: 100vw;
+        height: auto;
     }
 
     .conteneur-description {
@@ -738,11 +795,14 @@ iframe {
         width: 90vw;
         margin-right: 0;
         margin-bottom: 20vh;
+        height: auto;
+        font-size: auto;
     }
 
     .used {
         width: 90vw;
         margin-bottom: 20vh;
+        height: 50vh;
     }
 
     .used img {
@@ -753,11 +813,39 @@ iframe {
         width: 90vw;
         flex-direction: column;
         height: 90vh;
+        align-items: center;
+    }
+
+    .collaborateur {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: baseline;
+    }
+
+    .flex_collabo {
+        height: 100%;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: baseline;
+    }
+
+    .bloc_collabo {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
     }
 
     .processus {
         width: 90vw;
-        height: 70vh
+        height: auto
+    }
+
+    .images-processus {
+        flex-wrap: wrap;
     }
 
     /* quand petit écran, les images de la galerie en colonne */
@@ -781,6 +869,21 @@ iframe {
         width: 90vw;
         height: 70vh;
         flex-direction: column;
+        align-items: center;
+    }
+
+    .flex_specs {
+        height: 100%;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: baseline;
+    }
+
+    .bloc_specs {
+        display: flex;
+        flex-direction: column;
     }
 }
 
@@ -800,10 +903,19 @@ iframe {
     }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
+
+    .moi {
+        display: none;
+    }
+
+    .bio {
+        height: auto;
+    }
 
     .bio p {
-        font-size: 0.8rem;
+        width: 100%;
+        font-size: 5vw;
     }
 
     .description p {

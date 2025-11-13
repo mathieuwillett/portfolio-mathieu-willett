@@ -84,17 +84,19 @@
             <div class="conteneur-specs">
                 <!-- role, cours et type -->
                 <div class="specs">
-                    <div>
-                        <h5>rôle</h5>
-                        <h4>{{projet.role}}</h4>
-                    </div>
-                    <div>
-                        <h5>cours du projet</h5>
-                        <h4>{{projet.cours}}</h4>
-                    </div>
-                    <div>
-                        <h5>type de projet</h5>
-                        <h4>{{projet.type}}</h4>
+                    <div class="flex_specs">
+                        <div class="bloc_specs">
+                            <h5>rôle</h5>
+                            <h4>{{projet.role}}</h4>
+                        </div>
+                        <div class="bloc_specs">
+                            <h5>cours du projet</h5>
+                            <h4>{{projet.cours}}</h4>
+                        </div>
+                        <div class="bloc_specs">
+                            <h5>type de projet</h5>
+                            <h4>{{projet.type}}</h4>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -105,13 +107,18 @@
             <h3>collaborateurs</h3>
             <div class="conteneur-collaborateurs">
                 <div class="collaborateurs">
-                    <div v-for="(collabo, i) in projet.collaborateurs" :key="i" class="collaborateur">
-                        <!-- loop les collaborateurs et leurs roles -->
-                        <h5>{{projet.roles[i]}}</h5>
-                        <h4>{{collabo}}</h4>
+                    <div class="flex_collabo">
+                        <div v-for="(collabo, i) in projet.collaborateurs" :key="i" class="collaborateur">
+                            <!-- loop les collaborateurs et leurs roles -->
+                            <div class="bloc_collabo">
+                                <h5>{{projet.roles[i]}}</h5>
+                                <h4>{{collabo}}</h4>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+        </div>
         </div>
 
         <!-- section processus si projet et processus existe -->
@@ -161,6 +168,16 @@
                         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
                 </div>
+            </div>
+        </div>
+
+        <div class="conteneur-retour">
+            <div class="retour">
+                <a href="./index.html">
+                    <div>
+                        retour
+                    </div>
+                </a>
             </div>
         </div>
 
