@@ -149,18 +149,18 @@
     "id": 6,
     "title": "les héros de l'éclipse",
     "images": [
-      "./img/terminus/terminus_1.png",
-      "./img/terminus/terminus_2.jpg",
-      "./img/terminus/terminus_3.jpg",
-      "./img/terminus/terminus_4.jpg",
-      "./img/terminus/terminus_5.jpg",
-      "./img/terminus/terminus_6.jpg"
+      "./img/heros/heros1",
+      "./img/heros/heros2",
+      "./img/heros/heros3",
+      "./img/heros/heros4",
+      "./img/heros/heros5",
+      "./img/heros/heros6"
     ],
     "link": "projet.html?proj-id=6",
     "description": "lorem ipsum",
     "logiciels": [
-      "./img/logiciels/davinci.png",
-      "./img/logiciels/reaper.png"
+      "./img/logiciels/vscode.png",
+      "./img/logiciels/figma.png"
     ],
     "roles": [
       "programmeur",
@@ -171,7 +171,7 @@
       "Ahmed Kaissoumi",
       "Justin Montpetit"
     ],
-    "video": "https://www.youtube.com/embed/r0QNP7BkuOE?si=mcvAb3OuA2FqHqFR",
+    "video": "lorem ipsum",
     "role": "programmeur",
     "cours": "web 5",
     "type": "en équipe",
