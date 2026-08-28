@@ -331,7 +331,6 @@ main h3 {
 /* taille de la case paysage de la grid */
 .paysage {
     grid-column: span 2 / span 2;
-    grid-column-start: 2;
     grid-row-start: 3;
 }
 
@@ -350,6 +349,12 @@ main h3 {
     font-size: 1.8rem;
     color: #1d1d1d;
     font-weight: 500;
+}
+
+.heros {
+    grid-column: span 2 / span 2;
+    grid-column-start: 3;
+    grid-row-start: 3;
 }
 
 .heros div {
