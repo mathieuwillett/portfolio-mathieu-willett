@@ -373,6 +373,49 @@ main h3 {
     font-weight: 500;
 }
 
+.arbre {
+    grid-column: span 2 / span 2;
+    grid-row-start: 4;
+}
+
+.arbre div {
+    width: 40rem;
+    height: 5rem;
+    background-color: #919ea5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    transform: translateY(-4rem);
+    border: 0.2rem solid;
+    border-color: #f7f0f0 #1d1d1d #1d1d1d #f7f0f0;
+    font-size: 1.8rem;
+    color: #1d1d1d;
+    font-weight: 500;
+}
+
+.ether {
+    grid-column: span 2 / span 2;
+    grid-column-start: 3;
+    grid-row-start: 4;
+}
+
+.ether div {
+    width: 40rem;
+    height: 5rem;
+    background-color: #919ea5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    transform: translateY(-4rem);
+    border: 0.2rem solid;
+    border-color: #f7f0f0 #1d1d1d #1d1d1d #f7f0f0;
+    font-size: 1.8rem;
+    color: #1d1d1d;
+    font-weight: 500;
+}
+
 /* quand hover projet, plus clair */
 .projet:hover {
     filter: brightness(130%);

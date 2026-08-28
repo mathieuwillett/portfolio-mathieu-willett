@@ -34,9 +34,6 @@
     "type": "en équipe",
     "phrase": "Terminus est un court-métrage en macrophotographie qui illustre de façon symbolique et intense les conséquences tragiques de la conduite en état d'ivresse."
   },
-
-
-  
   {
     "id": 2,
     "title": "chasseur de crânes",
@@ -76,9 +73,6 @@
       "./img/processus/moodboard_epee.jpg"
     ]
   },
-
-
-
   {
     "id": 3,
     "title": "fou de vitesse",
@@ -103,9 +97,6 @@
     "type": "solo",
     "phrase": "Fou de vitesse est un jeu de course rétro en vue de dessus où jusqu'à trois joueurs s'affrontent pour réaliser le meilleur temps et récolter le plus de pièces sur un circuit pixellisé."
   },
-
-
-
   {
     "id": 4,
     "title": "prisonnier de soi-même",
@@ -130,9 +121,6 @@
     "type": "solo",
     "phrase": "Prisonnier de soi-même est un court-métrage d'animation 3D qui explore le combat intérieur d'une personne plongée dans le coma, prisonnière de ses pensées et de sa propre conscience."
   },
-
-
-
   {
     "id": 5,
     "title": "paysage",
@@ -157,10 +145,7 @@
     "type": "solo",
     "phrase": "Paysage est un projet multimédia interactif où sons et images réagissent aux gestes, à la voix et aux claviers MIDI, offrant une expérience immersive et évolutive inspirée de l'univers visuel de Prisonnier de soi-même."
   },
-
-
-
-   {
+  {
     "id": 6,
     "title": "les héros de l'éclipse",
     "images": [
@@ -190,6 +175,64 @@
     "role": "programmeur",
     "cours": "web 5",
     "type": "en équipe",
+    "phrase": "Terminus est un court-métrage en macrophotographie qui illustre de façon symbolique et intense les conséquences tragiques de la conduite en état d'ivresse."
+  },
+  {
+    "id": 7,
+    "title": "arbre en face",
+    "images": [
+      "./img/terminus/terminus_1.png",
+      "./img/terminus/terminus_2.jpg",
+      "./img/terminus/terminus_3.jpg",
+      "./img/terminus/terminus_4.jpg",
+      "./img/terminus/terminus_5.jpg",
+      "./img/terminus/terminus_6.jpg"
+    ],
+    "link": "projet.html?proj-id=7",
+    "description": "lorem ipsum",
+    "logiciels": [
+      "./img/logiciels/davinci.png",
+      "./img/logiciels/reaper.png"
+    ],
+    "roles": [
+      "programmeur",
+      "arboriste et designer",
+      "designer sonore",
+      "designer sonore"
+    ],
+    "collaborateurs": [
+      "Mikael Arseneau",
+      "Alexandre Gendron",
+      "Rafael Dubé",
+      "Matis Ghariani"
+    ],
+    "video": "https://www.youtube.com/embed/r0QNP7BkuOE?si=mcvAb3OuA2FqHqFR",
+    "role": "programmeur de la détection",
+    "cours": "expérience multimédia",
+    "type": "en équipe",
+    "phrase": "Terminus est un court-métrage en macrophotographie qui illustre de façon symbolique et intense les conséquences tragiques de la conduite en état d'ivresse."
+  },
+  {
+    "id": 8,
+    "title": "l'éther",
+    "images": [
+      "./img/terminus/terminus_1.png",
+      "./img/terminus/terminus_2.jpg",
+      "./img/terminus/terminus_3.jpg",
+      "./img/terminus/terminus_4.jpg",
+      "./img/terminus/terminus_5.jpg",
+      "./img/terminus/terminus_6.jpg"
+    ],
+    "link": "projet.html?proj-id=8",
+    "description": "lorem ipsum",
+    "logiciels": [
+      "./img/logiciels/davinci.png",
+      "./img/logiciels/reaper.png"
+    ],
+    "video": "https://www.youtube.com/embed/r0QNP7BkuOE?si=mcvAb3OuA2FqHqFR",
+    "role": "technicien pour l'intégration vidéo",
+    "cours": "stage en entreprise",
+    "type": "stage",
     "phrase": "Terminus est un court-métrage en macrophotographie qui illustre de façon symbolique et intense les conséquences tragiques de la conduite en état d'ivresse."
   }
 ]
