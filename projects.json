@@ -149,12 +149,12 @@
     "id": 6,
     "title": "les héros de l'éclipse",
     "images": [
-      "./img/heros/heros1",
-      "./img/heros/heros2",
-      "./img/heros/heros3",
-      "./img/heros/heros4",
-      "./img/heros/heros5",
-      "./img/heros/heros6"
+      "./img/heros/heros1.jpg",
+      "./img/heros/heros2.jpg",
+      "./img/heros/heros3.jpg",
+      "./img/heros/heros4.jpg",
+      "./img/heros/heros5.jpg",
+      "./img/heros/heros6.jpg"
     ],
     "link": "projet.html?proj-id=6",
     "description": "lorem ipsum",
