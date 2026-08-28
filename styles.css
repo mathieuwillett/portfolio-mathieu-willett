@@ -15,7 +15,7 @@
 }
 
 a {
-    color:#1d1d1d !important;
+    color: #1d1d1d !important;
 }
 
 /* css du header */
@@ -337,6 +337,22 @@ main h3 {
 
 /* div de titre de paysage */
 .paysage div {
+    width: 40rem;
+    height: 5rem;
+    background-color: #919ea5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    transform: translateY(-4rem);
+    border: 0.2rem solid;
+    border-color: #f7f0f0 #1d1d1d #1d1d1d #f7f0f0;
+    font-size: 1.8rem;
+    color: #1d1d1d;
+    font-weight: 500;
+}
+
+.heros div {
     width: 40rem;
     height: 5rem;
     background-color: #919ea5;
@@ -719,7 +735,7 @@ iframe {
     justify-content: center;
     align-items: center;
     font-size: 3vw;
-    color:#1d1d1d;
+    color: #1d1d1d;
 }
 
 .retour:hover {
